@@ -3056,6 +3056,7 @@ packages/core/content-type-builder/server/src/controllers/validation/__tests__/d
 packages/core/content-type-builder/server/src/controllers/validation/__tests__/component.test.ts
 packages/core/content-type-builder/server/src/controllers/validation/__tests__/common.test.ts
 packages/core/content-type-builder/server/src/controllers/validation/__tests__/content-type.test.ts
+packages/core/content-type-builder/server/src/controllers/validation/__tests__/schema.test.ts
 packages/core/content-type-builder/server/src/controllers/validation/__tests__/types.test.ts
 packages/core/content-type-builder/server/src/controllers/builder.ts
 packages/core/content-type-builder/server/src/controllers/schema.ts
@@ -3868,6 +3869,7 @@ packages/core/core/src/middlewares/cors.ts
 packages/core/core/src/middlewares/compression.ts
 packages/core/core/src/middlewares/logger.ts
 packages/core/core/src/middlewares/ip.ts
+packages/core/core/src/middlewares/__tests__/cors.test.ts
 packages/core/core/src/middlewares/__tests__/errors.test.ts
 packages/core/core/src/middlewares/__tests__/security.test.ts
 packages/core/core/src/factories.ts
@@ -4146,6 +4148,7 @@ docs/docs/docs/01-core/content-releases/02-frontend/02-release-details-page.mdx
 docs/docs/docs/01-core/content-releases/00-intro.md
 docs/docs/docs/01-core/content-releases/_category_.json
 docs/docs/docs/01-core/content-releases/01-backend.md
+docs/docs/docs/01-core/admin/05-guided-tour.md
 docs/docs/docs/01-core/admin/01-ee/02-audit-logs.md
 docs/docs/docs/01-core/admin/01-ee/03-hooks/use-license-limits.mdx
 docs/docs/docs/01-core/admin/01-ee/03-hooks/_category_.json
@@ -4232,7 +4235,6 @@ docs/docs/api/components/type.jsx
 docs/docs/api/api.mdx
 docs/docs/guides/03-typescript.md
 docs/docs/guides/01-code-of-conduct.md
-docs/docs/guides/06-guided-tour.md
 docs/docs/guides/04-fe-coding-guidelines.mdx
 docs/docs/guides/00-contributing.md
 docs/docs/guides/05-type-system/index.md
@@ -4595,7 +4597,9 @@ tests/e2e/tests/content-manager/relations-on-the-fly/edit-relation.spec.ts
 tests/e2e/tests/content-manager/relations-on-the-fly/create-relation.spec.ts
 tests/e2e/tests/content-manager/relations-on-the-fly/create-relation-editor.spec.ts
 tests/e2e/tests/content-manager/relations-on-the-fly/create-relation-and-publish.spec.ts
+tests/e2e/tests/content-manager/relations-on-the-fly/create-relation-in-new-component-and-save.spec.ts
 tests/e2e/tests/content-manager/relations-on-the-fly/create-relation-and-save.spec.ts
+tests/e2e/tests/content-manager/relations-on-the-fly/create-relation-in-component-and-save.spec.ts
 tests/e2e/tests/content-manager/uniqueness.spec.ts
 tests/e2e/tests/search/content-type.spec.ts
 tests/e2e/tests/review-workflows/settings.spec.ts
