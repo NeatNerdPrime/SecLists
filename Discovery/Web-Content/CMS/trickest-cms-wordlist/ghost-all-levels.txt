@@ -25279,6 +25279,14 @@ server/services/members/utils.test.js
 services/members/utils.test.js
 members/utils.test.js
 utils.test.js
+ghost/core/test/unit/server/services/members/SingleUseTokenProvider.test.js
+core/test/unit/server/services/members/SingleUseTokenProvider.test.js
+test/unit/server/services/members/SingleUseTokenProvider.test.js
+unit/server/services/members/SingleUseTokenProvider.test.js
+server/services/members/SingleUseTokenProvider.test.js
+services/members/SingleUseTokenProvider.test.js
+members/SingleUseTokenProvider.test.js
+SingleUseTokenProvider.test.js
 ghost/core/test/unit/server/services/members/middleware.test.js
 core/test/unit/server/services/members/middleware.test.js
 test/unit/server/services/members/middleware.test.js
@@ -36420,6 +36428,9 @@ playwright.config.mjs
 e2e/adr/README.md
 adr/README.md
 README.md
+e2e/adr/0002-page-objects-pattern.md
+adr/0002-page-objects-pattern.md
+0002-page-objects-pattern.md
 e2e/adr/0001-aaa-test-structure.md
 adr/0001-aaa-test-structure.md
 0001-aaa-test-structure.md
