@@ -1936,8 +1936,6 @@ upload/admin/language/en-gb/design/translation.php
 upload/admin/language/en-gb/design/seo_url.php
 upload/admin/language/en-gb/design/theme.php
 upload/admin/language/en-gb/design/seo_regex.php
-upload/admin/language/en-gb/cron/subscription.php
-upload/admin/language/en-gb/cron/cron.php
 upload/admin/language/en-gb/user/api.php
 upload/admin/language/en-gb/user/user_group.php
 upload/admin/language/en-gb/user/user.php
@@ -6142,10 +6140,10 @@ upload/catalog/controller/startup/extension.php
 upload/catalog/controller/startup/customer.php
 upload/catalog/controller/startup/seo_url.php
 upload/catalog/controller/startup/language.php
+upload/catalog/controller/startup/currency.php
 upload/catalog/controller/startup/application.php
 upload/catalog/controller/startup/api.php
 upload/catalog/controller/startup/session.php
-upload/catalog/controller/startup/task.php
 upload/catalog/controller/api/cart.php
 upload/catalog/controller/api/subscription.php
 upload/catalog/controller/api/customer.php
