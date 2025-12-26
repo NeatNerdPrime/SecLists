@@ -1,11 +1,17 @@
 .changeset/pink-mails-wonder.md
 .changeset/major-forks-run.md
+.changeset/blue-moose-reply.md
+.changeset/short-brooms-mix.md
 .changeset/big-poems-heal.md
 .changeset/rare-trams-search.md
+.changeset/ninety-hats-pull.md
 .changeset/weak-wings-build.md
 .changeset/config.json
 .changeset/free-lines-worry.md
+.changeset/brown-pigs-occur.md
+.changeset/breezy-moons-warn.md
 .changeset/new-ears-dig.md
+.changeset/rare-swans-know.md
 .changeset/chilly-poems-play.md
 .vscode/settings.json
 .vscode/extensions.json
@@ -144,18 +150,15 @@ sdk/src/rest/composable.ts
 sdk/src/rest/index.ts
 sdk/src/rest/utils/is-system-collection.ts
 sdk/src/rest/utils/get-auth-endpoint.ts
-sdk/src/rest/utils/query-to-params.test.ts
 sdk/src/rest/utils/index.ts
 sdk/src/rest/utils/throw-core-collection.ts
 sdk/src/rest/utils/throw-if-empty.ts
-sdk/src/rest/utils/query-to-params.ts
 sdk/src/rest/helpers/with-options.ts
 sdk/src/rest/helpers/index.ts
 sdk/src/rest/helpers/with-token.ts
 sdk/src/rest/helpers/with-search.ts
 sdk/src/rest/helpers/custom-endpoint.ts
 sdk/src/rest/commands/read/roles.ts
-sdk/src/rest/commands/read/webhooks.ts
 sdk/src/rest/commands/read/permissions.ts
 sdk/src/rest/commands/read/translations.ts
 sdk/src/rest/commands/read/revisions.ts
@@ -184,7 +187,6 @@ sdk/src/rest/commands/read/activity.ts
 sdk/src/rest/commands/read/presets.ts
 sdk/src/rest/commands/read/files.ts
 sdk/src/rest/commands/create/roles.ts
-sdk/src/rest/commands/create/webhooks.ts
 sdk/src/rest/commands/create/permissions.ts
 sdk/src/rest/commands/create/translations.ts
 sdk/src/rest/commands/create/notifications.ts
@@ -214,7 +216,6 @@ sdk/src/rest/commands/auth/providers.ts
 sdk/src/rest/commands/auth/password-request.ts
 sdk/src/rest/commands/auth/login.ts
 sdk/src/rest/commands/delete/roles.ts
-sdk/src/rest/commands/delete/webhooks.ts
 sdk/src/rest/commands/delete/permissions.ts
 sdk/src/rest/commands/delete/translations.ts
 sdk/src/rest/commands/delete/notifications.ts
@@ -236,7 +237,6 @@ sdk/src/rest/commands/delete/flows.ts
 sdk/src/rest/commands/delete/presets.ts
 sdk/src/rest/commands/delete/files.ts
 sdk/src/rest/commands/update/roles.ts
-sdk/src/rest/commands/update/webhooks.ts
 sdk/src/rest/commands/update/permissions.ts
 sdk/src/rest/commands/update/translations.ts
 sdk/src/rest/commands/update/notifications.ts
@@ -289,16 +289,20 @@ sdk/src/auth/index.ts
 sdk/src/auth/static.ts
 sdk/src/auth/utils/memory-storage.ts
 sdk/src/auth/types.ts
+sdk/src/utils/format-fields.test.ts
+sdk/src/utils/query-to-params.test.ts
 sdk/src/utils/get-request-url.ts
 sdk/src/utils/request.ts
 sdk/src/utils/is-directus-error.ts
+sdk/src/utils/format-fields.ts
 sdk/src/utils/extract-data.ts
 sdk/src/utils/request.test.ts
+sdk/src/utils/get-request-url.test.ts
 sdk/src/utils/is-response.ts
+sdk/src/utils/query-to-params.ts
 sdk/src/schema/revision.ts
 sdk/src/schema/share.ts
 sdk/src/schema/role.ts
-sdk/src/schema/webhook.ts
 sdk/src/schema/user.ts
 sdk/src/schema/flow.ts
 sdk/src/schema/policy.ts
@@ -437,7 +441,6 @@ api/src/bus/lib/use-bus.test.ts
 api/src/bus/index.ts
 api/src/rate-limiter.ts
 api/src/services/roles.ts
-api/src/services/webhooks.ts
 api/src/services/authentication.ts
 api/src/services/graphql/schema-cache.ts
 api/src/services/graphql/index.ts
@@ -556,7 +559,6 @@ api/src/services/specifications.test.ts
 api/src/services/files.test.ts
 api/src/services/tfa.ts
 api/src/services/files.ts
-api/src/services/webhooks.test.ts
 api/src/services/websocket.test.ts
 api/src/cli/index.test.ts
 api/src/cli/load-extensions.ts
@@ -1074,6 +1076,7 @@ api/src/database/migrations/20210304A-remove-locked-fields.ts
 api/src/database/migrations/20230526A-migrate-translation-strings.ts
 api/src/database/migrations/20210506A-rename-interfaces.ts
 api/src/database/migrations/20250813A-add-mcp.ts
+api/src/database/migrations/20251224A-remove-webhooks.ts
 api/src/database/migrations/20210422A-remove-files-interface.ts
 api/src/database/migrations/20220429A-add-flows.ts
 api/src/database/migrations/run.ts
@@ -1190,7 +1193,6 @@ api/src/request/agent-with-ip-validation.ts
 api/src/request/is-denied-ip.ts
 api/src/controllers/graphql.ts
 api/src/controllers/roles.ts
-api/src/controllers/webhooks.ts
 api/src/controllers/auth.ts
 api/src/controllers/metrics.ts
 api/src/controllers/permissions.ts
@@ -1432,8 +1434,6 @@ app/src/modules/settings/routes/data-model/collections/composables/use-expand-co
 app/src/modules/settings/routes/data-model/collections/components/collection-dialog.vue
 app/src/modules/settings/routes/data-model/collections/components/CollectionItem.vue
 app/src/modules/settings/routes/data-model/collections/components/collection-options.vue
-app/src/modules/settings/routes/webhooks/collection.vue
-app/src/modules/settings/routes/webhooks/item.vue
 app/src/modules/settings/routes/flows/flow-drawer.vue
 app/src/modules/settings/routes/flows/overview.test.ts
 app/src/modules/settings/routes/flows/overview.vue
@@ -1681,6 +1681,7 @@ app/src/composables/use-reload-guard.ts
 app/src/composables/use-folders.ts
 app/src/composables/use-revisions.ts
 app/src/composables/use-relation-o2m.ts
+app/src/composables/use-comparison-diff.ts
 app/src/composables/use-nested-validation.ts
 app/src/composables/use-preset.ts
 app/src/composables/use-window-size.ts
@@ -1729,6 +1730,7 @@ app/src/composables/use-shortcut.test.ts
 app/src/composables/use-edits-guard.ts
 app/src/composables/use-page-size.test.ts
 app/src/composables/use-template-data.ts
+app/src/composables/use-comparison-diff.test.ts
 app/src/composables/use-clipboard.ts
 app/src/composables/use-relation-permissions.ts
 app/src/composables/use-focus-trap-manager.ts
@@ -1775,6 +1777,7 @@ app/src/utils/get-local-type.ts
 app/src/utils/is-hex.test.ts
 app/src/utils/flatten-field-groups.test.ts
 app/src/utils/sync-ref-property.ts
+app/src/utils/reconstruct-comparison-html.test.ts
 app/src/utils/format-filesize.ts
 app/src/utils/get-default-values-from-fields.test.ts
 app/src/utils/add-related-primary-key-to-fields.ts
@@ -1791,6 +1794,7 @@ app/src/utils/get-related-collection.test.ts
 app/src/utils/localized-format.ts
 app/src/utils/get-stringified-value.test.ts
 app/src/utils/format-field-function.test.ts
+app/src/utils/should-show-comparison-diff.ts
 app/src/utils/point-on-line.ts
 app/src/utils/get-appearance.test.ts
 app/src/utils/validate-item.ts
@@ -1847,6 +1851,7 @@ app/src/utils/get-route.ts
 app/src/utils/unexpected-error.ts
 app/src/utils/get-literal-interpolated-translation.ts
 app/src/utils/upload-files.ts
+app/src/utils/reconstruct-comparison-html.ts
 app/src/utils/md.ts
 app/src/utils/get-revision-fields.ts
 app/src/utils/get-asset-url.test.ts
@@ -2482,10 +2487,12 @@ app/src/views/private/private-view/stores/sidebar.ts
 app/src/views/private/private-view/stores/nav-bar.ts
 app/src/views/private/private-view/components/private-view-header-bar-icon.vue
 app/src/views/private/private-view/components/private-view-no-app-access.vue
+app/src/views/private/private-view/components/private-view-header-bar-icon.test.ts
 app/src/views/private/private-view/components/private-view-resize-handle.vue
 app/src/views/private/private-view/components/private-view-nav-project-name.vue
 app/src/views/private/private-view/components/private-view-nav.vue
 app/src/views/private/private-view/components/private-view-main.vue
+app/src/views/private/private-view/components/private-view-header-bar.test.ts
 app/src/views/private/private-view/components/private-view-header-bar-action-button.vue
 app/src/views/private/private-view/components/private-view-root.vue
 app/src/views/private/private-view/components/private-view-header-bar-action-button.test.ts
@@ -2775,7 +2782,6 @@ packages/system-data/src/fields/operations.yaml
 packages/system-data/src/fields/settings.yaml
 packages/system-data/src/fields/dashboards.yaml
 packages/system-data/src/fields/sessions.yaml
-packages/system-data/src/fields/webhooks.yaml
 packages/system-data/src/fields/files.yaml
 packages/system-data/src/fields/revisions.yaml
 packages/system-data/src/fields/collections.yaml
@@ -2832,8 +2838,6 @@ packages/specs/src/paths/items/items.yaml
 packages/specs/src/paths/items/item.yaml
 packages/specs/src/paths/operations/operations.yaml
 packages/specs/src/paths/operations/operation.yaml
-packages/specs/src/paths/webhooks/webhooks.yaml
-packages/specs/src/paths/webhooks/webhook.yaml
 packages/specs/src/paths/utils/hash-generate.yaml
 packages/specs/src/paths/utils/export.yaml
 packages/specs/src/paths/utils/random.yaml
@@ -2901,7 +2905,6 @@ packages/specs/src/components/extension.yaml
 packages/specs/src/components/item.yaml
 packages/specs/src/components/operation.yaml
 packages/specs/src/components/comment.yaml
-packages/specs/src/components/webhook.yaml
 packages/specs/src/components/schema.yaml
 packages/specs/src/components/preset.yaml
 packages/specs/src/components/field.yaml
@@ -3462,7 +3465,6 @@ packages/types/src/extensions/api-extension-context.ts
 packages/types/src/extensions/themes.ts
 packages/types/src/graphql.ts
 packages/types/src/events.ts
-packages/types/src/webhooks.ts
 packages/types/src/authentication.ts
 packages/types/src/permissions.ts
 packages/types/src/schema.ts
