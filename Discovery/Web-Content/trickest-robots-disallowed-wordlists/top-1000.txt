@@ -2336,7 +2336,7 @@ $rpc/google.internal.maps.mapsjs.v1.MapsJsInternalService
 ?*__rmidpage
 ?*add-to-cart=
 ?*ajs_event
-?*apikey*http://vk.com/robots.txt
+?*apikey*http://vogue.com/robots.txt
 ?*app
 ?*attachment_id
 ?*author
@@ -3035,10 +3035,8 @@ AWSSimpleQueueService/20080101
 AccommodationCrossSells
 AccommodationTips
 Account
-AccountAccess
 AccountDisavow?
 AccountMerge
-AccountStatus
 Achievements
 ActionRecord
 ActiveCalendar/mobile/mobilelist.aspx
@@ -3113,7 +3111,6 @@ AppUserReview
 App_Themes/
 AppleMapsAction
 Applications
-Arabic
 Areas/
 Areas/Epx/Content/500.aspx?aspxerrorpath=
 Art
@@ -3147,7 +3144,6 @@ Baldric/static-1.73
 Baldric/static-1.80
 Baldric/static-1.94
 BeachSweeps
-BillingActivity
 BillingAndPayments
 BillingDetail
 BillingInvoiceFile
@@ -3176,13 +3172,11 @@ CampaignConfigAjax
 CampaignConfiguration
 CampaignManagement
 CancelBooking
-CancelPlan
 CarsComparePartners
 Cart
 CauseTeaserPopup
 Celebrate100Million
 CertificateOfExcellenceRequestSupport
-ChangePlan
 Channel
 CheapFlightsCommerce
 CheapFlightsController
@@ -3198,7 +3192,6 @@ CheckoutEditItemsDisplayView
 CheckoutOrderBillingView
 CheckoutOrderShippingView
 CheckoutSignInView
-Chinese
 Citation/Download
 Civ
 Claim
@@ -3261,7 +3254,6 @@ Disallow
 Disallow:
 DiscountGroup
 DisplayMap
-DoNotTest
 Doc
 Documents/in
 Domains/DomainControlPanel
@@ -3272,14 +3264,12 @@ ESPModal
 ESPNPlusAdobeTracking
 EULegal
 EarlyRequesterJS/static-1.38
-EditProfiles
 ElasticLoadBalancing/2009-05-15
 ElasticLoadBalancing/2010-07-01
 EmailCartView
 EmailHotel
 EmailMap
 EmailMemberRegistration
-EmailPreferences
 EmailSpellCheckJson
 EmbedSlideshow
 EnlargedImageView
@@ -3309,7 +3299,6 @@ FiatsCmd
 FilterState
 FindRestaurants
 FinishAppInstall
-FireTV
 Flights?
 FlightsCommerce
 FlightsComparePartners
@@ -3371,7 +3360,6 @@ HMDThankYou
 HRMConnect
 HYx10rg3
 HandleHotelSuperPortal
-HdToggle
 HeadJS/static-2.115
 HeadJS/static-2.83
 HeadJS/static-2.84
@@ -3490,13 +3478,11 @@ JoinPlus
 JsonData/
 JsonServiceController
 JustForYouGuide
-Korean
 LFE/Live.controls.sharedpages/error.aspx
 LICENSE.txt
 LNAjax
 LanderLogger
 LandingPage
-LanguagePreferences
 Leaderboard
 LeerberichtenLO
 LightSubscriptionCenter
@@ -3515,9 +3501,7 @@ LocationPhotosSearch
 LocationTab
 LocationWidget
 LogMediaClick
-LoginHelp
 LogonForm
-Logout
 M9sY8PVm6js.js
 MAINTAINERS.txt
 MAPS
@@ -3526,12 +3510,10 @@ MaPS
 MachineTranslation
 Mail/
 MailEmergency
-ManageDevices
 ManageListingApi
 ManageOrder
 ManageOwnersTopReasonsApi
 ManagePhotos
-ManageProfiles
 ManageReturns
 ManageShopListingApi
 ManageShopping
@@ -3544,7 +3526,6 @@ Maps
 MarketPerception
 Marketing/EcapSurvey.aspx
 MarketingContentWidget/GetCurrentBanner
-Maxis
 MediaBadgeResponse
 MediaDisplayView
 MediaKit
@@ -3619,7 +3600,6 @@ MemberSubscribe
 MemberSubscriptionsController
 MemberTagsAjax
 MemberTravelMap
-Meo
 MessageRunDetailID=
 Messages
 MessagingOptions
@@ -3755,7 +3735,6 @@ Mobilemembers
 ModalRegistrationController
 ModuleAjax
 ModuleBootstrap
-MoviesYouveSeen
 MptUrl
 MsnForumFeedServlet
 MultiOwners
@@ -3785,7 +3764,6 @@ NetPromoterPopup
 NewMessage
 NewOwners
 NewTopic
-NewWatchInstantlyRSS
 News/Index
 News/XT
 News/Xt
@@ -3835,7 +3813,6 @@ PWD
 PacMan
 PageSpeed=noscript
 PageviewRecord
-Panasonic
 PanoramaXml
 Partners
 PasswordReset
@@ -3867,7 +3844,6 @@ PoiRecommendationEditor
 PoiRecommendationList
 PoiReviewDetail
 PoiTipDashboard
-PopupDetails
 PortalIdParser/static-1.27
 PortalIdParser/static-1.28
 PortalIdParser/static-1.29
@@ -3899,7 +3875,6 @@ ProductError
 ProductPaymentUpdate
 Production/
 Profile
-ProfilesGate
 Project
 PromoTools
 PromotionDetailsDisplayView
@@ -4128,7 +4103,6 @@ SmsAjaxServlet
 Snap
 SocialIapReporting
 SolutionsDisplay
-Sony
 SortAttractions
 SortEateries
 SortHotels
@@ -4340,7 +4314,6 @@ WebObjects/MZStore.woa/wa/viewMultiRoom?
 WebObjects/MZStoreElements.woa
 WebX
 WhatsNearby
-WiViewingActivity
 WidgetBrowserExtension
 WidgetEmbed
 WidgetListAsync.naver
@@ -4354,8 +4327,6 @@ WriteReviews
 XCSA
 Xhr
 Yandex
-YourAccount
-YourAccountPayment
 ZendeskRedirector
 ZendeskSSO
 ZeroClipboard/static-1.6
@@ -4751,7 +4722,6 @@ account_settings/set_password?
 account_settings/set_your_password$
 account_settings/set_your_password?
 account_settings?
-accountaccess
 accounts
 accounts/ClientAuth
 accounts/ClientAuth
@@ -4762,7 +4732,6 @@ accounts/force-by-email
 accounts/login
 accounts/o8
 accounts/o8/id
-accountstatus
 acct
 acercadenosotros
 aclick
@@ -5034,7 +5003,6 @@ ai_log
 aid
 aihub/tfhub
 aim/
-airtel
 aistudio/*favicon*.png$
 ajah
 ajax
@@ -5151,7 +5119,6 @@ analytics/seomagic
 analytics/traffic/overview
 analytics/uploads
 analyzer-api
-anan
 android/downloads
 android/market
 android/market_images
@@ -5338,14 +5305,9 @@ aq
 aqiscript/*
 ar
 ar-ae/
-ar-ae/payroll/
 ar-ar/search
 ar-ar/searchresults
-ar-bh/payroll/
 ar-eg/
-ar-kw/payroll/
-ar-om/payroll/
-ar-qa/payroll/
 ar-sa/
 ar/
 ar/$
@@ -5368,17 +5330,13 @@ ar/user$
 ar_ae
 ar_eg/templates/M
 ar_sa
-arabic
 arama
 archive
 archive$
 archive.php?archive=*
 archive.php?view=all
 archive/api/image.jpg
-archive/article
-archive/find
 archive/graphs.php
-archive/page
 archive/project/sovsport$
 archived
 archived$
@@ -5734,7 +5692,6 @@ audio_file
 audio_news
 audio_player
 audiofiles
-aui/inbound
 aura
 aura/promo
 aus/interchange
@@ -5750,7 +5707,6 @@ auth/signup
 auth/sso/proxy-login
 auth/verifychallenge
 auth_pass
-authenticate
 authentication
 authentication$
 authentication/signin
@@ -5771,7 +5727,6 @@ autocomplete/projects
 autocomplete/users
 autocompletes
 autodiscover/
-autologin
 autopoet
 auvio/embed
 availability
@@ -6963,7 +6918,6 @@ books?*zoom=5
 bookshelf
 boomerang
 boutique/sitemaps
-bouyguestelecom
 bp
 bp/c
 bp/guest_mfg_brand
@@ -6998,14 +6952,11 @@ brians-song
 briarpatch
 bricks/image
 bridesmaids
-britishairways
 broadband
 brouillon/
-browse
 browse-2
 browse.aspx
 browse/deals/partial
-browse/genre
 browse/homes/all
 browse/more_page
 browse/reviews/recent
@@ -7017,7 +6968,6 @@ browse_
 browse_content
 browser/tutorials
 browsers
-brutus
 brw
 bs-BA/$
 buckets/*/edit
@@ -7788,7 +7738,6 @@ change-shipping
 changeLanguage=True
 changebrowser
 changelog
-changeplan
 changeset
 channel
 channels
@@ -7840,7 +7789,6 @@ checkoutnow
 checkouts
 checkpoint
 children
-chinese
 chisla.html
 chistory.php
 chocolatechip
@@ -7923,7 +7871,6 @@ cldr/trac
 cldr/utility
 clea/
 clean$
-clearcookies
 cli
 click
 click*
@@ -9883,7 +9830,6 @@ colors/zaffre/$
 com.condenast/yv8
 combo/
 comedy
-comhem
 comic-indies
 comic-indies/$
 comic-indies/about
@@ -9988,7 +9934,6 @@ community/zh
 community_comment
 community_post
 community_s
-companies
 company
 company/*.rss
 company/add-ons-agreement
@@ -10408,7 +10353,6 @@ coupons/visit
 courier
 courses
 courses/
-courts
 cover
 covid19/mobility
 cp
@@ -10499,7 +10443,6 @@ csds/*
 cservice
 cservice/ya_index.gsp
 csi_204
-csl
 csp
 csp_block
 csp_report_only
@@ -11507,7 +11450,6 @@ device
 device-ajax
 device-prefs
 deviceList
-deviceManagement
 devmailmobile/
 devmx/
 devopsconsole/images
@@ -11910,7 +11852,6 @@ editor/uploads/1/_/1/custom_themes/578730180640357361/files
 editor2.jsp
 editorial-images
 editorial/*
-editpayment
 edits
 edocs/infogdocs/tdc_sony/
 edocs/lexdocs/
@@ -11974,7 +11915,6 @@ elements
 eli-search
 eliminar-busqueda
 eliminar-favoritos
-elisa
 elite?
 elp
 em
@@ -12009,7 +11949,6 @@ emailprefs
 emails
 emailservice
 emailsignup
-emailunsubscribe
 embed
 embed/*
 embed/@
@@ -12791,7 +12730,6 @@ enterprise-partner-search/sitemaps
 enterprise/$
 enterprise/plan/$
 enterprise/seo
-entertain
 entertainment/article/Minerva-s-horoscope
 entities/search
 entityexplore$
@@ -12801,7 +12739,6 @@ entrez/eutils
 entrez/sutils
 entrez/utils
 entrez/viewer.fcgi
-entrytrap
 enttinyscrolljs/*
 enus/
 enviro/static-3.70
@@ -13842,7 +13779,6 @@ eu/assets/
 eu/kb
 eu/login-messages/
 eu/promos/
-eula
 eur-lex
 eures/main.jsp
 eurocontrol/
@@ -14245,7 +14181,6 @@ fios
 firefox/?
 firefox/downloads
 firefox/new_tab_learn_more
-firetv
 firms/
 firststeps.
 fisheries/fleet
@@ -17027,7 +16962,6 @@ free-tools/plagiarism-checker/?q=
 free-trial
 free/cloud-computing-free-tier/
 free/databases-free-tier/
-freemonth
 freepublications/
 freertos/archive
 french-studies/
@@ -17133,7 +17067,6 @@ geo/download
 geo/tools
 geocoder
 geolocation
-geooverride
 germany/library/images/mnp/
 germany/video/de/de/related*
 get
@@ -17807,7 +17740,7 @@ html5
 http
 http-checker
 http2_data
-http://4.bp.blogspot.com/robots.txt
+http://2.bp.blogspot.com/robots.txt
 http://akparti.org.tr/robots.txt
 http://aliexpress.com/robots.txt
 http://amazon.co.jp/robots.txt
@@ -17822,9 +17755,9 @@ http://ameblo.jp/robots.txt
 http://apple.com/robots.txt
 http://bbc.com/robots.txt
 http://bbcsfx.acropolis.org.uk/robots.txt
-http://chrome.google.com/robots.txt
-http://creativecommons.org/robots.txt
-http://en.m.wikipedia.org/robots.txt
+http://chromewebstore.google.com/robots.txt
+http://criminallawyerinnj.com/robots.txt
+http://en.wikipedia.org/robots.txt
 http://expedia.com/robots.txt
 http://gist.github.com/robots.txt
 http://govostis.gr/robots.txt
@@ -17841,12 +17774,12 @@ http://seekingalpha.com/robots.txt
 http://siteground.com/robots.txt
 http://smithsonianmag.com/robots.txt
 http://static.wixstatic.com/robots.txt
-http://techradar.com/robots.txt
+http://techrepublic.com/robots.txt
 http://thelancet.com/robots.txt
 http://threads.net/robots.txt
 http://tracks.arte.tv/robots.txt
-http://upwork.com/robots.txt
-http://use.fontawesome.com/robots.txt
+http://upload.wikimedia.org/robots.txt
+http://usnews.com/robots.txt
 http://weebly.com/robots.txt
 https://player.cnevids.com
 https://www.iubenda.com/en/help/126238-pricing-faqs-legacy-guide
@@ -18128,7 +18061,6 @@ image-cn-sf-sitemap.xml.gz
 image-cn-spd-sitemap.xml.gz
 image/detailprint
 imageClipperUpload
-imagelibrary
 images
 images$
 images-apphost
@@ -19961,8 +19893,6 @@ koa/vocaas
 koha/
 kolkata
 kontakt
-korean
-kpn
 kr/en
 kr/en$
 krypto=
@@ -20065,8 +19995,6 @@ learning/settings
 learning/settings$
 learning/settings?
 learnmore
-learnmorelayer
-learnmorelayertv
 leave
 lecture
 leerberichten
@@ -20172,7 +20100,6 @@ level/34
 level/78
 lexikon
 lexikonListe
-lg
 lgads_v2/minify-1,channel-nbt.cms*
 li/track
 lib
@@ -20345,9 +20272,6 @@ login_or_join/redirected$
 login_or_join/redirected?
 login_or_join?
 login_with_redirect
-loginhelp
-loginhelp/lookup
-loginhelpsucess
 logo-maker/brief
 logo-maker/choose-variation
 logo-maker/woo
@@ -20637,11 +20561,9 @@ mats/?diagid=100001&eulaaccept=yes*
 mats/default.aspx?diagid=100001&eulaaccept=yes*
 max=
 max_price=
-maxis
 maxprice=
 mbf
 mbox
-mcd
 mcp-catalog/$
 mcp-cc-ai-code/$
 mdocsarchives/
@@ -20764,7 +20686,6 @@ mentions
 menu
 menu/*/feedback_form
 menu/store-locator
-meo
 meps/*/eptvAjax
 meps/*/pdf*
 meps/*/xml*
@@ -20891,7 +20812,6 @@ modern-formats-eng/ucp/static/*/client
 modern-formats-eng/ucp/static/*/csr
 modern-formats-eng/ucp/static/*/dev
 modern-formats-eng/ucp/static/framework_logging
-modernizr
 module-catalogue
 module-showcase
 modules
@@ -20918,7 +20838,6 @@ moments_app
 mone$
 mone_event
 mone_v2
-money
 money/blueprint/archive
 money/blueprint/transfer?pname=
 money/homefront
@@ -21751,11 +21670,8 @@ not-authorized
 not-found
 not-supported.html
 not_recommended_reviews
-notamember
 note
-notfound
 notfound.html
-notices
 notifications
 notifications
 notifications$
@@ -21772,7 +21688,6 @@ npln
 npost/
 npr
 nqrwns
-nrdapp
 ns/
 ns/hydra/console/?
 ns/local_news
@@ -21942,7 +21857,6 @@ optin/
 optout
 optout/
 optoutemail
-orangefrance
 order
 order-detail
 order-results
@@ -21968,7 +21882,6 @@ our-kind-of-traitor
 out-of-home
 overlay
 overview
-overviewblockseeother
 ownerView.php
 ownerview.php
 p
@@ -22345,7 +22258,6 @@ pagespeed/insights/ui/logo
 paid-content/news/how-galaxy-ai-camera-tools-help-you-take-better-photos-automatically-on-the-s25
 paid-content/news/how-samsungs-galaxy-ai-boosts-gaming-performance
 paid-posts
-panasonic
 panel
 panelweb
 pantheon
@@ -22513,7 +22425,6 @@ phbr~r_
 phenom
 phone/compare/?
 phoneinfo
-phonenumber
 photo
 photo-test-editor-x
 photo/group
@@ -22788,7 +22699,6 @@ playground
 playing-house
 playlist
 playlists/*/user
-playstation
 plenary/*/vod.html
 plonejsi18n$
 plugin
@@ -22886,12 +22796,9 @@ polozhyeniya-i-usloviya
 pools/c
 pools/campaign
 popup
-popup/codewhatisthis
 popup?
 popup_manager_priority.cms*
 popup_security.jsp
-popupdetails
-popupprivacypolicy
 popups/mediaplayer
 popups/popup_gallery
 portal
@@ -23029,7 +22936,6 @@ privacy/archived-versions.html
 privacy/consent
 privacy/request-data
 privacy/zoho-group.html
-privacypolicychanges
 private
 private
 private-promo
@@ -23219,7 +23125,6 @@ proto
 protocol
 protocolexchange/labgroups
 prototyping/$
-proximus
 proxy
 proxy
 proxy/
@@ -23846,7 +23751,6 @@ q/user/*/subscribers
 q/user/*/verifies
 q=
 qa
-qantas
 qemail
 qi
 qr
@@ -24042,7 +23946,6 @@ release-notes/$
 releasenotes/item/
 relnotes
 remember-the-titans
-rememberme
 remote-login.php
 remote-work-lp/$
 remote.control
@@ -25014,7 +24917,6 @@ salesImages/static-1.383
 salesImages/static-1.389
 samemodel.php?imageid=*&pg=*&sortcriteria=6
 saml_sso
-samsung
 san-andreas
 sap/saphana/pilot/
 sap/saphana/pilot/offer/
@@ -25714,7 +25616,6 @@ signup/payment?
 signup?
 signup?fullscreen=
 signup_modal
-signurl
 silent-login
 silva
 silver-linings-playbook
@@ -26308,7 +26209,6 @@ solutions/solution-providers/program/reseller/adguidelines/
 solutions/solution-providers/program/reseller/authorized/
 solutions/solution-providers/program/reseller/customerterms/
 solutions/ux-flow-generator/$
-sony
 sort=
 sortBy=
 sos/clerical
@@ -26756,7 +26656,6 @@ subscription
 subscription/
 subscription/*?*onboarded=
 subscription/*?*source=
-subscriptioncancel
 subscriptions
 subscriptions/manage/
 subscriptions/securejson/
@@ -26988,7 +26887,6 @@ talk/create
 talk/new_topic
 talk/user
 talk/user/*/article
-talktalk
 tally-loader-react/static-1.65
 target_baby
 target_group
@@ -26997,7 +26895,6 @@ targetdirect_group
 tariffselect
 tasks
 tasks/
-tastesurvey
 tax-center
 tax.php
 tax_countries.php
@@ -27027,7 +26924,6 @@ tb/recent
 tbl*
 tblang=
 tbproxy
-tdc
 tdir/p/kids-back-to-school
 tdv2_fp
 te-IN/$
@@ -27044,8 +26940,6 @@ tech/*s=
 tech/services-and-software/best-vpn
 techbiz/media/news/2001/09/46556
 telegraph
-telenor
-telfort
 telsearch
 temp
 template
@@ -27456,7 +27350,6 @@ terms/looker/legal/rapid-deployment-terms
 terms/looker/legal/sccs
 terms/looker/legal/suppliers/partner-assignment-faq
 terms/looker/legal/suppliers/supplier-code-of-conduct
-termsofusechanges
 test
 test-kick-tires
 test-v1-page-template
@@ -27652,7 +27545,6 @@ ti/p
 ticket_fields
 tickets
 tickets-external?
-tim
 time/change/*?
 time/change/@
 time/map/*_escaped_fragment_
@@ -27974,13 +27866,7 @@ try-search-term
 try?
 trylater
 tsa
-tto/archive/article
-tto/archive/find
-tto/archive/frame/article
-tto/archive/page
-tto/news
 tucritica
-tudum
 tune*retpath=
 turbo
 turbo*?*ajax=1
@@ -27993,7 +27879,6 @@ tv
 tv/shows
 tv/thumb
 tv/tv-news/jean-alexander-dies-coronation-streets-3764827
-tvsignup
 tw
 tw/*
 tw/Download
@@ -28203,7 +28088,6 @@ unsubscribecampaign
 unsubscribed
 unsupported-browser
 until=
-upcomingevents
 update
 update-your-browser
 update.php
@@ -28686,7 +28570,7 @@ uxtest/ux/
 uy
 uy/es/ServicesLandingPage/AdvisoryLanding/RPA/Robotic_Process%20Automation_insert.pdf
 uy/help
-uz/http://bilgematics.com/robots.txt
+uz/http://beppegrillo.it/robots.txt
 v
 v$
 v/badge
@@ -28747,7 +28631,6 @@ verify_age
 verify_cookies
 verify_your_email$
 verify_your_email?
-verifyidentity
 version
 version-info
 versions
@@ -28875,7 +28758,6 @@ view-skytour
 viewReview
 viewconfig$
 viewer
-viewingactivity
 viewlocale=zh_CN
 viewrecentepisode
 viewvc
@@ -28886,7 +28768,6 @@ vimeo-academy
 vimeo-for-figma/$
 vinterdev/
 vip
-virginaustralia
 virtual
 virtualization/
 virtualsupportassistant
@@ -28901,8 +28782,6 @@ vlt
 vmware/about
 vn
 vod
-vodafone
-vodafonedemobilelaunch
 voices/
 vote-review
 votre-europarl/
@@ -29131,7 +29010,6 @@ wholesale-page-*.html
 wholesale.html$
 wholesalecheckout
 whsmiths
-whysecure
 whythisad
 widget
 widget-docs
@@ -29597,7 +29475,7 @@ wiki/Wikipedia_discusión:Solicitudes_de_verificación_de_usuarios
 wiki/Wikipedia_discusión:Supresores/Candidaturas
 wiki/Wikipedia_talk%3AAbuse_reports
 wiki/Wikipedia_talk%3AAbuse_response
-wiki/Wikipedia_talk%3AAdministrator_electionshttp://en.wikipedia.org/robots.txt
+wiki/Wikipedia_talk%3AAdministrator_electionshttp://en.gravatar.com/robots.txt
 wiki/Wikipedia_talk%3AAdministrator_electionshttp://engadget.com/robots.txt
 wiki/Wikipedia_talk%3AAdministrator_electionshttp://win.gs/robots.txt
 wiki/Wikipedia_talk%3AAdministrator_recall
@@ -29852,7 +29730,6 @@ workinmoms
 workplace/nic/
 workshop/
 workspace
-world
 worldclock/astronomy.html?*year=
 worldclock/clockchange.html?
 worldclock/clockchange.html?*year=2022
@@ -30032,13 +29909,11 @@ wwwhkotc.cc
 x
 x/oauth
 xas/api
-xboxone
 xbp/search
 xclick-auction
 xcs0MhRsfxHG.js
 xdoor
 xf/help
-xfinity
 xgCxM9By/init.js
 xhr
 xhtml/?
@@ -30062,7 +29937,6 @@ xmlrpc.php
 xmlsearch
 xoplatform/logger/api/logger
 xorouter
-xs4all
 xxx-the-return-of-xander-cage
 y1=
 yaca
@@ -30083,8 +29957,6 @@ yca/cy
 year
 your
 your-shop
-yourAccount
-youraccount
 youreurope/businessACC
 youreurope/businessDEV/http://europarl.europa.eu/robots.txt
 youreurope/citizensACC
@@ -30333,7 +30205,6 @@ zh_cn
 zh_hans
 zh_hant
 zh_tw/templates/M
-ziggo
 zite-importer
 zoeken
 zoholics/Folleto-Zoholics-Mexico-2016.pdf
