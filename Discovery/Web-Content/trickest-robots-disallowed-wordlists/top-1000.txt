@@ -544,7 +544,6 @@ $rpc/google.internal.maps.mapsjs.v1.MapsJsInternalService
 /Ajax/Similar
 /BucketContent
 /CHANGELOG.txt
-/CVS
 /Careers/Form
 /Careers/Profiles
 /Careers/Registration
@@ -1672,7 +1671,6 @@ $rpc/google.internal.maps.mapsjs.v1.MapsJsInternalService
 /plus
 /pmredirectshow/*
 /pmtoinavigation/*
-/po
 /pocasi/
 /podcast/*/*?i=
 /podcast/ITEM_NAME
@@ -1707,6 +1705,7 @@ $rpc/google.internal.maps.mapsjs.v1.MapsJsInternalService
 /privacy-policy-generator/*/load_aside_right_box
 /private-promo
 /probr-1~/project-type--*/$
+/procurement/
 /product-refs
 /product/checkifitemisinwishlist
 /productaanbevelingen
@@ -2283,7 +2282,6 @@ $rpc/google.internal.maps.mapsjs.v1.MapsJsInternalService
 /wire?
 /workflow-templates/search?
 /workflow-templates/standalone
-/workshop
 /workshop/
 /wp-admin
 /wp-content/cache
@@ -2336,7 +2334,7 @@ $rpc/google.internal.maps.mapsjs.v1.MapsJsInternalService
 ?*__rmidpage
 ?*add-to-cart=
 ?*ajs_event
-?*apikey*http://vogue.com/robots.txt
+?*apikey*http://vk.com/robots.txt
 ?*app
 ?*attachment_id
 ?*author
@@ -3039,7 +3037,6 @@ AccountDisavow?
 AccountMerge
 Achievements
 ActionRecord
-ActiveCalendar/mobile/mobilelist.aspx
 ActivityUID=
 AdRequestEventLogApi
 AddForumUser
@@ -3959,7 +3956,6 @@ REVAMPING
 RMReviewCollect
 RSManagementCenter
 RSOfflineBilling
-RSSSyndicator.aspx
 RT
 RateUserReview
 Rateit
@@ -4996,7 +4992,6 @@ ai
 ai-sandbox-internal/generated_images
 ai/$
 ai/config-2025/$
-ai/errors
 ai/generation/asset
 ai/our-approach/$
 ai_log
@@ -5177,6 +5172,7 @@ api/editionurlgenerator
 api/extensions/1.0/extensions
 api/federation
 api/graphql
+api/historical
 api/html
 api/infinite-list.html
 api/internal/*/location
@@ -5201,7 +5197,6 @@ api/taxonomy$
 api/template-taxonomy-service
 api/template-taxonomy-service$
 api/ucs/shortlist
-api/ui
 api/ui-extensions
 api/uisprime/track
 api/unified-underdog
@@ -5336,7 +5331,10 @@ archive$
 archive.php?archive=*
 archive.php?view=all
 archive/api/image.jpg
+archive/article
+archive/find
 archive/graphs.php
+archive/page
 archive/project/sovsport$
 archived
 archived$
@@ -10263,7 +10261,6 @@ copilot
 copilot/c
 copilotsearch?q=
 copy-conductor/crawled
-copyleft
 copyright-reporting
 coral-talk
 core
@@ -11380,7 +11377,6 @@ delivery_tracking
 dell/cities-transformed
 dell/cloud-future-of-medicine
 deloitte
-demand
 demo
 demo
 demo/$
@@ -11700,8 +11696,6 @@ domains/transfer-a-domain/transfer.aspx
 domains/whois/whois-ajax.aspx
 doncherry
 donut-for-figjam/$
-dor/4572.htm
-dor/reference/legal/rulings/unused
 dotnet/docs/reference
 dotnet/docs/reference/*/latest
 dotnet/docs/reference/*/latest$
@@ -11727,7 +11721,6 @@ downloads
 downloads.php
 downloads/$
 downloads/*
-downloadtype.aspx
 dp/e-mail-friend
 dp/manual-submit
 dp/product-availability
@@ -11764,11 +11757,6 @@ dubs
 dummy
 dvi
 dw
-dwd/files/CM_Files
-dwd/files/JWIB
-dwd/files/policy
-dwd/files/swic
-dwd/test
 dynamic
 dynamic-offer
 dynamiclogic
@@ -13957,7 +13945,7 @@ fastajax/order/tax/validatevat
 fastanswers
 fatalerror.html
 faves-i_love_u_get_away_from_me
-favicon.icohttp://blog.google/robots.txt
+favicon.icohttp://blog.hubspot.com/robots.txt
 favorit-hinzufuegen
 favorit-loeschen
 favorites?
@@ -17141,8 +17129,6 @@ globalmarketfinder
 globalmarketfinder/*.html
 gm-api/
 gnca-ajax-redesign/showcase-image
-gnu.css
-gnusearch
 go
 go-back
 go-back?
@@ -17203,7 +17189,6 @@ gorsel/touch/?
 goto
 goto_issue
 goto_rubric
-gov/files/awards
 governance-add-on/$
 government-education/nonprofits/aws-serve-member/
 government-education/nonprofits/aws-serve/
@@ -17462,7 +17447,6 @@ health/*/wp-
 health/QA-Tabbed-ManyTabs-21
 health/drugs/hm-test-all-about-humira
 health/drugs/ozempic-for-weight-loss
-health/files/rhpthttp://inc.com/robots.txt
 health/hm-test-17-proven-tips-to-sleep-better-at-night
 health/hm-test-feature-template-for-sponsorship
 health/mirgraine-headaches
@@ -17740,7 +17724,7 @@ html5
 http
 http-checker
 http2_data
-http://2.bp.blogspot.com/robots.txt
+http://1.envato.market/robots.txt
 http://akparti.org.tr/robots.txt
 http://aliexpress.com/robots.txt
 http://amazon.co.jp/robots.txt
@@ -17756,8 +17740,8 @@ http://apple.com/robots.txt
 http://bbc.com/robots.txt
 http://bbcsfx.acropolis.org.uk/robots.txt
 http://chromewebstore.google.com/robots.txt
-http://criminallawyerinnj.com/robots.txt
-http://en.wikipedia.org/robots.txt
+http://creativecommons.org/robots.txt
+http://en.m.wikipedia.org/robots.txt
 http://expedia.com/robots.txt
 http://gist.github.com/robots.txt
 http://govostis.gr/robots.txt
@@ -17774,12 +17758,12 @@ http://seekingalpha.com/robots.txt
 http://siteground.com/robots.txt
 http://smithsonianmag.com/robots.txt
 http://static.wixstatic.com/robots.txt
-http://techrepublic.com/robots.txt
+http://techradar.com/robots.txt
 http://thelancet.com/robots.txt
 http://threads.net/robots.txt
 http://tracks.arte.tv/robots.txt
 http://upload.wikimedia.org/robots.txt
-http://usnews.com/robots.txt
+http://use.fontawesome.com/robots.txt
 http://weebly.com/robots.txt
 https://player.cnevids.com
 https://www.iubenda.com/en/help/126238-pricing-faqs-legacy-guide
@@ -18377,7 +18361,6 @@ index.xml
 index?sport=*&topId=
 index?sport=*&type=replay
 index_m
-indot/3212.htm
 industries/clients
 industry-promotion
 industry=
@@ -18437,8 +18420,6 @@ intl/*/home
 intl/*/hotels
 intl/*/learn
 intl/*/local-services-ads
-intl/*/search/?
-intl/*/search?
 intl/*/start
 intl/*/tool
 intl/admin
@@ -18520,7 +18501,6 @@ is-IS/$
 is/
 isapi/
 isbn
-isdh/drafts_local
 it
 it$
 it*/listing/*/favoriters
@@ -20525,7 +20505,6 @@ maps?sid=
 mapslt?
 mapspro
 mapview
-mar-optout
 market/
 market/confederate_flag
 market/dixie_flag
@@ -20838,6 +20817,7 @@ moments_app
 mone$
 mone_event
 mone_v2
+money
 money/blueprint/archive
 money/blueprint/transfer?pname=
 money/homefront
@@ -21662,7 +21642,6 @@ nojs=
 nonConfig/api/wpa
 nonprofits/account
 norobot
-norobotsnorhumansshouldevervisithispage
 north-america/search
 noscript
 not-allowed
@@ -22270,7 +22249,6 @@ parental-consent/confirmation
 parental-passcode
 parents/activity-finder
 parents/search
-parking.php4
 parliament/public/traineeship/secured/
 parliament/public/transltraineeship/secured
 parsely-api-endpoint
@@ -22712,7 +22690,6 @@ plus/experience/*/series/
 plus/experience/dreamforce_2025_x_test
 plus/r
 plusinstall
-pm-optout
 pm/
 pm/amplify/
 pm/lambda/
@@ -22862,8 +22839,6 @@ premiumsupport/knowledge-center/feedback-no/
 premiumsupport/knowledge-center/feedback-yes/
 prensa
 preorders
-prep/gnumaint
-prep/wrappers-and-scripts
 prequalify
 present
 presentation
@@ -22960,7 +22935,6 @@ probr
 probr*_template_
 probr0
 processFind*
-procurement/
 producers/webmanual
 product
 product-catalogs
@@ -23955,7 +23929,6 @@ remotelogout
 removalrequest
 remove-favorite
 renders
-renewal-reminder-optout
 rental-manager/?source=topnav&itc=postbutton_topnav
 rental-manager/?zpid=
 rental-manager/login/?url
@@ -24922,7 +24895,6 @@ sap/saphana/pilot/
 sap/saphana/pilot/offer/
 sap/saphana/pilot/offer/confirmation
 sars-cov-2
-savannah-checkouts
 save
 save-document
 save-query
@@ -25034,7 +25006,6 @@ scratch_1.4
 scratchr2/static
 screener/insider
 screensaver
-screenshots
 script
 scripts
 scripts/accountextlogin.php
@@ -25326,33 +25297,13 @@ seo/learn/assets*&topic=
 seo/learn/assets*?resource-type=
 seo/learn/assets*?topic=
 series
-serv
 server
 server-configurator
 server-status
 server.php
-server/banners
-server/body-include
-server/bottom-notes
 server/check-olark-chat-support
 server/docs/search
-server/footer
-server/fs-gang
-server/generic
-server/gnun
-server/head-include
-server/header
-server/html5-head-include
-server/html5-header
-server/include-file-list
-server/outdated
-server/select-language.html
-server/source
-server/staging
-server/top-addendum
-server/trans-map.html
 server/update-user-traffic-source
-server/whatsnew_translations.xml
 server_error_pages/
 serverdown
 servererror.aspx
@@ -26060,10 +26011,6 @@ soft/punto/?
 soft/punto/mac/uninstall
 soft/punto/win/uninstall
 soft/win/?
-software/gnun/linc
-software/gnun/proofread
-software/gnun/reports
-software/gnun/test
 solution-center/tag
 solutions
 solutions/$
@@ -26211,9 +26158,6 @@ solutions/solution-providers/program/reseller/customerterms/
 solutions/ux-flow-generator/$
 sort=
 sortBy=
-sos/clerical
-sos/online_corps
-sos/registration
 soundcloud-tpa
 sounds/player
 sounds/player$
@@ -26651,7 +26595,6 @@ subscribe/user
 subscribe/view.pl
 subscribe_gps
 subscribe_success
-subscribetocalendar.aspx
 subscription
 subscription/
 subscription/*?*onboarded=
@@ -27327,7 +27270,6 @@ templates/x-matrix-template/$
 templates/yearly-calendar-template/$
 temporary_marketing_proxy/*
 temptation-island
-ter-optout
 termini-e-condizioni
 termos-e-condicoes
 terms
@@ -27750,7 +27692,6 @@ transcripts/419570939
 transcripts/470280334
 transcripts/480128005
 transcripts/830237502
-transfers
 transformation-digitale-du-processus-de-design/$
 transit?
 translate
@@ -27866,6 +27807,11 @@ try-search-term
 try?
 trylater
 tsa
+tto/archive/article
+tto/archive/find
+tto/archive/frame/article
+tto/archive/page
+tto/news
 tucritica
 tune*retpath=
 turbo
@@ -28074,7 +28020,6 @@ univercd/cc/td/doc
 universal-design-system/
 university
 unlink
-unlisted
 unsaved
 unsub
 unsubscribe
@@ -28416,7 +28361,6 @@ use-cases/global-solution-providers/microsoft/bizspark/signon/
 use-cases/global-solution-providers/microsoft/bizspark/signon/thankyou/
 use-cases/global-solution-providers/microsoft/bizspark/thankyou/
 used
-usenet
 user
 user
 user$
@@ -28570,7 +28514,7 @@ uxtest/ux/
 uy
 uy/es/ServicesLandingPage/AdvisoryLanding/RPA/Robotic_Process%20Automation_insert.pdf
 uy/help
-uz/http://beppegrillo.it/robots.txt
+uz/http://bilgematics.com/robots.txt
 v
 v$
 v/badge
@@ -28626,7 +28570,6 @@ verification/source
 verificationofemployment
 verified-modal
 verify
-verify-mobile
 verify_age
 verify_cookies
 verify_your_email$
@@ -28814,8 +28757,6 @@ wall*?search=1
 wall*?thread=
 wall*?with=
 wall-*?q=
-wallpaper
-wallpapers
 wanted
 wap/*
 wapsearch?
@@ -29475,7 +29416,7 @@ wiki/Wikipedia_discusión:Solicitudes_de_verificación_de_usuarios
 wiki/Wikipedia_discusión:Supresores/Candidaturas
 wiki/Wikipedia_talk%3AAbuse_reports
 wiki/Wikipedia_talk%3AAbuse_response
-wiki/Wikipedia_talk%3AAdministrator_electionshttp://en.gravatar.com/robots.txt
+wiki/Wikipedia_talk%3AAdministrator_electionshttp://en.wikipedia.org/robots.txt
 wiki/Wikipedia_talk%3AAdministrator_electionshttp://engadget.com/robots.txt
 wiki/Wikipedia_talk%3AAdministrator_electionshttp://win.gs/robots.txt
 wiki/Wikipedia_talk%3AAdministrator_recall
@@ -29730,6 +29671,7 @@ workinmoms
 workplace/nic/
 workshop/
 workspace
+world
 worldclock/astronomy.html?*year=
 worldclock/clockchange.html?
 worldclock/clockchange.html?*year=2022
@@ -29778,6 +29720,7 @@ wp-admin
 wp-admin/
 wp-admin/admin-ajax.php
 wp-admin/admin-ajax.php
+wp-admin/admin-ajax.phphttp://rtbf.be/robots.txt
 wp-admin/admin-ajax.phphttp://starbucks.com/robots.txt
 wp-admin/load-scripts.php
 wp-admin/load-styles.php
@@ -30277,7 +30220,6 @@ zz-test
 500.htm?aspxerrorpath=
 500.html
 978
-1009fab55a45b3b3
 1318
 1319
 1328
@@ -30341,6 +30283,7 @@ zz-test
 8618
 9742
 9744
+39102c5806d044f6
 1014943
 3584794
 5787254
