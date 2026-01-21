@@ -2618,6 +2618,7 @@ src/Presentation/Nop.Web/Views/Shared/_OrderReviewData.cshtml
 src/Presentation/Nop.Web/Views/Shared/_AddressAttributes.cshtml
 src/Presentation/Nop.Web/Views/Shared/_Print.cshtml
 src/Presentation/Nop.Web/Views/Shared/_ColumnsTwo.cshtml
+src/Presentation/Nop.Web/Views/Shared/_RenameWishlistModal.cshtml
 src/Presentation/Nop.Web/Views/Shared/_JavaScriptDisabledWarning.cshtml
 src/Presentation/Nop.Web/Views/Shared/_Notifications.cshtml
 src/Presentation/Nop.Web/Views/Shared/_DiscountBox.cshtml
@@ -4878,6 +4879,7 @@ src/Plugins/Nop.Plugin.Misc.RFQ/Controllers/RfqCustomerController.cs
 src/Plugins/Nop.Plugin.Misc.RFQ/Controllers/RfqAdminController.cs
 src/Plugins/Nop.Plugin.Misc.RFQ/Factories/AdminModelFactory.cs
 src/Plugins/Nop.Plugin.Misc.RFQ/Factories/CustomerModelFactory.cs
+src/Plugins/Nop.Plugin.Misc.RFQ/Data/Migrations/UpdateDateTimeLocales.cs
 src/Plugins/Nop.Plugin.Misc.RFQ/Data/Migrations/AddLocales.cs
 src/Plugins/Nop.Plugin.Misc.RFQ/Data/Migrations/SchemaMigration.cs
 src/Plugins/Nop.Plugin.Misc.RFQ/Data/Migrations/AddSettings.cs
