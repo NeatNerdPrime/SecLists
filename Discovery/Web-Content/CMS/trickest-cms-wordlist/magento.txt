@@ -1582,6 +1582,7 @@ lib/internal/Magento/Framework/Cache/Test/Unit/Backend/RemoteSynchronizedCacheTe
 lib/internal/Magento/Framework/Cache/Test/Unit/Backend/MongoDbTest.php
 lib/internal/Magento/Framework/Cache/Test/Unit/Backend/Decorator/DecoratorAbstractTest.php
 lib/internal/Magento/Framework/Cache/Test/Unit/Backend/Decorator/CompressionTest.php
+lib/internal/Magento/Framework/Cache/Test/Unit/Backend/SymfonyL2CacheTest.php
 lib/internal/Magento/Framework/Cache/Test/Unit/Backend/_files/MongoBinData.txt
 lib/internal/Magento/Framework/Cache/Test/Unit/Backend/DatabaseTest.php
 lib/internal/Magento/Framework/Cache/Test/Unit/InvalidateLoggerTest.php
@@ -2471,6 +2472,7 @@ lib/internal/Magento/Framework/Mail/Template/SenderResolverInterface.php
 lib/internal/Magento/Framework/Mail/Template/FactoryInterface.php
 lib/internal/Magento/Framework/Mail/Template/Factory.php
 lib/internal/Magento/Framework/Mail/TransportInterface.php
+lib/internal/Magento/Framework/Mail/Test/Unit/EmailMessageTest.php
 lib/internal/Magento/Framework/Mail/Test/Unit/TransportTest.php
 lib/internal/Magento/Framework/Mail/Test/Unit/Template/FactoryTest.php
 lib/internal/Magento/Framework/Mail/Test/Unit/Template/TransportBuilderByStoreTest.php
@@ -5563,7 +5565,6 @@ dev/tests/api-functional/testsuite/Magento/GraphQl/Catalog/Product/ProductCatego
 dev/tests/api-functional/testsuite/Magento/GraphQl/Catalog/Product/CustomAttributesV2Test.php
 dev/tests/api-functional/testsuite/Magento/GraphQl/Catalog/MediaGalleryTest.php
 dev/tests/api-functional/testsuite/Magento/GraphQl/Catalog/UrlRewritesTest.php
-dev/tests/api-functional/testsuite/Magento/GraphQl/Catalog/ProductNameWithSpecialCharactersTest.php
 dev/tests/api-functional/testsuite/Magento/GraphQl/Catalog/ExceptionFormatterDefaultModeTest.php
 dev/tests/api-functional/testsuite/Magento/GraphQl/Catalog/CategoryTest.php
 dev/tests/api-functional/testsuite/Magento/GraphQl/Catalog/CategoryCanonicalUrlTest.php
@@ -5791,6 +5792,7 @@ dev/tests/api-functional/testsuite/Magento/GraphQl/Sales/OrderStatusChangeDateTe
 dev/tests/api-functional/testsuite/Magento/GraphQl/Sales/RetrieveOrdersWithConfigurableProductByOrderNumberTest.php
 dev/tests/api-functional/testsuite/Magento/GraphQl/Sales/ReorderOverlayProductTest.php
 dev/tests/api-functional/testsuite/Magento/GraphQl/Sales/OrderIsVirtualTest.php
+dev/tests/api-functional/testsuite/Magento/GraphQl/Sales/OrderDateLocaleFormattingTest.php
 dev/tests/api-functional/testsuite/Magento/GraphQl/Sales/OrderAvailableActionTest.php
 dev/tests/api-functional/testsuite/Magento/GraphQl/Sales/CustomerOrderItemProductTest.php
 dev/tests/api-functional/testsuite/Magento/GraphQl/Sales/SalesTaxStoreConfigTest.php
@@ -8066,6 +8068,7 @@ dev/tests/integration/testsuite/Magento/Catalog/Model/Category/_files/category_w
 dev/tests/integration/testsuite/Magento/Catalog/Model/Category/_files/service_category_create.php
 dev/tests/integration/testsuite/Magento/Catalog/Model/Category/_files/service_category_create_rollback.php
 dev/tests/integration/testsuite/Magento/Catalog/Model/CategoryRepositoryTest.php
+dev/tests/integration/testsuite/Magento/Catalog/Model/AbstractModel/ConcreteStub.php
 dev/tests/integration/testsuite/Magento/Catalog/Model/AbstractModel/Stub.php
 dev/tests/integration/testsuite/Magento/Catalog/Model/Indexer/Product/Flat/Action/RowTest.php
 dev/tests/integration/testsuite/Magento/Catalog/Model/Indexer/Product/Flat/Action/RowsTest.php
@@ -8123,6 +8126,7 @@ dev/tests/integration/testsuite/Magento/Catalog/Model/ResourceModel/Eav/Attribut
 dev/tests/integration/testsuite/Magento/Catalog/Model/ResourceModel/Product/Link/Product/CollectionTest.php
 dev/tests/integration/testsuite/Magento/Catalog/Model/ResourceModel/Product/Indexer/Eav/SourceTest.php
 dev/tests/integration/testsuite/Magento/Catalog/Model/ResourceModel/Product/CollectionTest.php
+dev/tests/integration/testsuite/Magento/Catalog/Model/ResourceModel/Product/Compare/Item/CollectionTest.php
 dev/tests/integration/testsuite/Magento/Catalog/Model/ResourceModel/Product/GalleryTest.php
 dev/tests/integration/testsuite/Magento/Catalog/Model/ResourceModel/Category/CollectionTest.php
 dev/tests/integration/testsuite/Magento/Catalog/Model/ResourceModel/CategoryTest.php
@@ -8589,6 +8593,7 @@ dev/tests/integration/testsuite/Magento/Catalog/Block/Product/ListProduct/Sortin
 dev/tests/integration/testsuite/Magento/Catalog/Block/Product/ListProduct/CheckProductPriceTest.php
 dev/tests/integration/testsuite/Magento/Catalog/Block/Product/ListProduct/ProductInCategoriesViewTest.php
 dev/tests/integration/testsuite/Magento/Catalog/Block/Product/ImageTemplateEscapingTest.php
+dev/tests/integration/testsuite/Magento/Catalog/Block/Product/AbstractProduct/Stub.php
 dev/tests/integration/testsuite/Magento/Catalog/Block/Product/AbstractTest.php
 dev/tests/integration/testsuite/Magento/Catalog/Block/Product/ProductList/CrosssellTest.php
 dev/tests/integration/testsuite/Magento/Catalog/Block/Product/ProductList/UpsellTest.php
@@ -12150,6 +12155,7 @@ dev/tests/js/jasmine/tests/app/code/Magento/Catalog/adminhtml/js/category-checkb
 dev/tests/js/jasmine/tests/app/code/Magento/Catalog/adminhtml/js/product-gallery.test.js
 dev/tests/js/jasmine/tests/app/code/Magento/Catalog/adminhtml/js/utils/percentage-price-calculator.test.js
 dev/tests/js/jasmine/tests/app/code/Magento/Catalog/adminhtml/js/product/set/editor.test.js
+dev/tests/js/jasmine/tests/app/code/Magento/Catalog/adminhtml/js/product/weight-handler.test.js
 dev/tests/js/jasmine/tests/app/code/Magento/Catalog/adminhtml/js/components/product-ui-select.test.js
 dev/tests/js/jasmine/tests/app/code/Magento/Catalog/adminhtml/js/components/dynamic-rows-import-custom-options.test.js
 dev/tests/js/jasmine/tests/app/code/Magento/Catalog/adminhtml/js/disable-on-option/yesno.test.js
@@ -13798,6 +13804,7 @@ app/code/Magento/OrderCancellation/Test/Mftf/Section/AdminOrderCancellationConfi
 app/code/Magento/OrderCancellation/Test/Mftf/Test/AdminOrderCancellationReasonsConfigCreateEditTest.xml
 app/code/Magento/OrderCancellation/Test/Mftf/Test/AdminOrderCancellationConfigTest.xml
 app/code/Magento/OrderCancellation/Test/Mftf/Test/AdminOrderCancellationReasonsConfigRemoveAllTest.xml
+app/code/Magento/OrderCancellation/Test/Unit/Model/CancelOrderTest.php
 app/code/Magento/OrderCancellation/etc/adminhtml/system.xml
 app/code/Magento/OrderCancellation/etc/db_schema_whitelist.json
 app/code/Magento/OrderCancellation/etc/module.xml
@@ -15099,6 +15106,7 @@ app/code/Magento/Cms/Test/Mftf/Test/AdminCmsBlockGridUrlFilterApplierTest.xml
 app/code/Magento/Cms/Test/Mftf/Test/AdminAddVariableToWYSIWYGCMSTest.xml
 app/code/Magento/Cms/Test/Mftf/Test/AdminContentBlocksNavigateMenuTest.xml
 app/code/Magento/Cms/Test/Mftf/Test/AdminConfigureStoreInformationTest.xml
+app/code/Magento/Cms/Test/Mftf/Test/AdminFilterCmsBlocksAndPagesByTitleWithBackslashTest.xml
 app/code/Magento/Cms/Test/Mftf/Test/AdminCreateDisabledCmsBlockEntityAndAssignToCategoryTest.xml
 app/code/Magento/Cms/Test/Mftf/Test/AdminAddWidgetToWYSIWYGWithRecentlyComparedProductsTypeTest.xml
 app/code/Magento/Cms/Test/Mftf/Test/AdminAddVariableToWYSIWYGBlockTest.xml
@@ -23306,6 +23314,8 @@ app/code/Magento/Catalog/Test/Unit/Model/CategoryListTest.php
 app/code/Magento/Catalog/Test/Unit/Setup/Patch/Data/UpdateMultiselectAttributesBackendTypesTest.php
 app/code/Magento/Catalog/Test/Unit/Setup/CategorySetupTest.php
 app/code/Magento/Catalog/Test/Unit/Service/SpecialPriceServiceTest.php
+app/code/Magento/Catalog/Test/Unit/Block/Adminhtml/Helper/Form/Wysiwyg/ContentTest.php
+app/code/Magento/Catalog/Test/Unit/Block/Adminhtml/Helper/Form/WysiwygTest.php
 app/code/Magento/Catalog/Test/Unit/Block/Adminhtml/Form/Renderer/Fieldset/ElementTest.php
 app/code/Magento/Catalog/Test/Unit/Block/Adminhtml/Product/Helper/Form/ImageTest.php
 app/code/Magento/Catalog/Test/Unit/Block/Adminhtml/Product/Helper/Form/CategoryTest.php
@@ -24556,7 +24566,6 @@ app/code/Magento/CatalogGraphQl/Model/Resolver/Products/DataProvider/Product/Com
 app/code/Magento/CatalogGraphQl/Model/Resolver/Products/DataProvider/Deferred/Product.php
 app/code/Magento/CatalogGraphQl/Model/Resolver/Products/DataProvider/CustomAttributesFlattener.php
 app/code/Magento/CatalogGraphQl/Model/Resolver/Product/ProductLinks.php
-app/code/Magento/CatalogGraphQl/Model/Resolver/Product/ProductName.php
 app/code/Magento/CatalogGraphQl/Model/Resolver/Product/CustomizableDateTypeOptionValue.php
 app/code/Magento/CatalogGraphQl/Model/Resolver/Product/EntityIdToId.php
 app/code/Magento/CatalogGraphQl/Model/Resolver/Product/NewFromTo.php
@@ -34529,6 +34538,7 @@ app/code/Magento/Sales/Test/Unit/Model/ResourceModel/Order/Invoice/CommentTest.p
 app/code/Magento/Sales/Test/Unit/Model/ResourceModel/Order/Invoice/RelationTest.php
 app/code/Magento/Sales/Test/Unit/Model/ResourceModel/AttributeTest.php
 app/code/Magento/Sales/Test/Unit/Model/ResourceModel/Provider/NotSyncedDataProviderTest.php
+app/code/Magento/Sales/Test/Unit/Model/ResourceModel/Report/Order/CreatedatTest.php
 app/code/Magento/Sales/Test/Unit/Model/ResourceModel/Report/BestsellersTest.php
 app/code/Magento/Sales/Test/Unit/Setup/SerializedDataConverterTest.php
 app/code/Magento/Sales/Test/Unit/Setup/SalesOrderPaymentDataConverterTest.php
