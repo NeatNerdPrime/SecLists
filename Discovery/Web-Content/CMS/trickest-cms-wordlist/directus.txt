@@ -1,15 +1,8 @@
-.changeset/lovely-needles-feel.md
-.changeset/forty-singers-slide.md
-.changeset/dry-deer-kneel.md
-.changeset/plain-guests-build.md
-.changeset/goofy-fans-bow.md
-.changeset/fix-withoutenlargement-focal-point.md
-.changeset/tangy-dingos-drive.md
+.changeset/huge-baths-notice.md
+.changeset/common-jars-cover.md
+.changeset/shy-carrots-think.md
 .changeset/config.json
-.changeset/spotty-rocks-itch.md
-.changeset/gold-friends-stare.md
-.changeset/wacky-stamps-brake.md
-.changeset/safe-pens-draw.md
+.changeset/full-beers-relate.md
 .vscode/settings.json
 .vscode/extensions.json
 .stylelintrc.json
@@ -2122,6 +2115,7 @@ app/src/interfaces/input-block-editor/bus.ts
 app/src/interfaces/input-block-editor/use-file-handler.ts
 app/src/interfaces/input-block-editor/alignment.ts
 app/src/interfaces/input-block-editor/sanitize.test.ts
+app/src/interfaces/input-block-editor/input-block-editor.test.ts
 app/src/interfaces/select-color/select-color.test.ts
 app/src/interfaces/select-color/select-color.vue
 app/src/interfaces/select-color/index.ts
@@ -2634,7 +2628,6 @@ app/src/views/private/private-view/components/private-view-header-bar.vue
 app/src/views/private/private-view/components/private-view-header-bar-actions.vue
 app/src/views/private/private-view/components/private-view.vue
 app/src/views/private/private-view/components/private-view-drawer.vue
-app/src/views/private/components/CollabAvatars.vue
 app/src/views/private/components/notification-item.vue
 app/src/views/private/components/FolderPickerListItem.vue
 app/src/views/private/components/layout-sidebar-detail.vue
@@ -2643,6 +2636,10 @@ app/src/views/private/components/archive-sidebar-detail.vue
 app/src/views/private/components/flow-sidebar-detail.vue
 app/src/views/private/components/search-input.vue
 app/src/views/private/components/basic-import-sidebar-detail.vue
+app/src/views/private/components/collab/utils.test.ts
+app/src/views/private/components/collab/utils.ts
+app/src/views/private/components/collab/CollabIndicatorHeader.vue
+app/src/views/private/components/collab/CollabIndicatorField.vue
 app/src/views/private/components/save-options.vue
 app/src/views/private/components/drawer-files.vue
 app/src/views/private/components/user-popover.vue

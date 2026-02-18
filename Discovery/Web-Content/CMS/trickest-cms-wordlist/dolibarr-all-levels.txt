@@ -863,6 +863,9 @@ README.md
 dev/initdemo/updatedemo.php
 initdemo/updatedemo.php
 updatedemo.php
+dev/initdemo/mysqldump_dolibarr_24.0.0.sql
+initdemo/mysqldump_dolibarr_24.0.0.sql
+mysqldump_dolibarr_24.0.0.sql
 dev/initdemo/initdemo.sh
 initdemo/initdemo.sh
 initdemo.sh
@@ -1137,9 +1140,6 @@ sftpget_and_loaddump.php
 dev/initdemo/mysqldump_dolibarr_3.5.0.sql
 initdemo/mysqldump_dolibarr_3.5.0.sql
 mysqldump_dolibarr_3.5.0.sql
-dev/initdemo/mysqldump_dolibarr_23.0.0.sql
-initdemo/mysqldump_dolibarr_23.0.0.sql
-mysqldump_dolibarr_23.0.0.sql
 dev/tools/fixduplicatelangkey.sh
 tools/fixduplicatelangkey.sh
 fixduplicatelangkey.sh
@@ -43986,14 +43986,6 @@ tools/ui/class/documentation.class.php
 ui/class/documentation.class.php
 class/documentation.class.php
 documentation.class.php
-htdocs/admin/tools/ui/experimental/experiments/input-feedback/index.php
-admin/tools/ui/experimental/experiments/input-feedback/index.php
-tools/ui/experimental/experiments/input-feedback/index.php
-ui/experimental/experiments/input-feedback/index.php
-experimental/experiments/input-feedback/index.php
-experiments/input-feedback/index.php
-input-feedback/index.php
-index.php
 htdocs/admin/tools/ui/experimental/experiments/dolibarr-context/assets/dolibarr-context.umd.js
 admin/tools/ui/experimental/experiments/dolibarr-context/assets/dolibarr-context.umd.js
 tools/ui/experimental/experiments/dolibarr-context/assets/dolibarr-context.umd.js
@@ -44090,6 +44082,12 @@ tools/ui/content/titles.php
 ui/content/titles.php
 content/titles.php
 titles.php
+htdocs/admin/tools/ui/content/input-feedback.php
+admin/tools/ui/content/input-feedback.php
+tools/ui/content/input-feedback.php
+ui/content/input-feedback.php
+content/input-feedback.php
+input-feedback.php
 htdocs/admin/tools/ui/content/index.php
 admin/tools/ui/content/index.php
 tools/ui/content/index.php
