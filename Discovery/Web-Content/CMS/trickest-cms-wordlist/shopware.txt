@@ -7644,6 +7644,7 @@ tests/unit/Core/Framework/Adapter/Twig/TwigVariableParserTest.php
 tests/unit/Core/Framework/Adapter/Twig/SwEscapeFilterTest.php
 tests/unit/Core/Framework/Adapter/Twig/TwigEnvironmentTest.php
 tests/unit/Core/Framework/Adapter/Twig/SecurityExtensionTest.php
+tests/unit/Core/Framework/Adapter/Twig/SwTwigFunctionResetterTest.php
 tests/unit/Core/Framework/Adapter/Twig/NamespaceHierarchy/BundleHierarchyBuilderTest.php
 tests/unit/Core/Framework/Adapter/Twig/TwigVariableParserFactoryTest.php
 tests/unit/Core/Framework/Adapter/Cache/StoreApiRouteCacheKeyEventTest.php
@@ -7901,8 +7902,12 @@ tests/unit/Core/Service/_fixtures/manifest1.xml
 tests/unit/Core/Service/AppInfoTest.php
 tests/unit/Core/Service/ServiceSourceResolverTest.php
 tests/unit/Core/Service/ServiceExceptionTest.php
+tests/unit/Core/Service/Requirement/ShopwareAccountRequirementTest.php
+tests/unit/Core/Service/Requirement/ServiceConsentRequirementTest.php
+tests/unit/Core/Service/Requirement/RequirementsValidatorTest.php
 tests/unit/Core/Service/ServiceLifecycleTest.php
 tests/unit/Core/Service/Subscriber/ExtensionCompatibilitiesResolvedSubscriberTest.php
+tests/unit/Core/Service/Subscriber/ShopwareAccountSubscriberTest.php
 tests/unit/Core/Service/Subscriber/PermissionsSubscriberTest.php
 tests/unit/Core/Service/Subscriber/InstalledExtensionsListingLoadedSubscriberTest.php
 tests/unit/Core/Service/Subscriber/LicenseSyncSubscriberTest.php
@@ -8214,6 +8219,7 @@ tests/unit/Elasticsearch/Framework/Command/ElasticsearchAdminUpdateMappingComman
 tests/unit/Elasticsearch/Framework/Command/ElasticsearchAdminIndexingCommandTest.php
 tests/unit/Elasticsearch/Framework/Command/ElasticsearchAdminResetCommandTest.php
 tests/unit/Elasticsearch/Product/ProductCriteriaParserTest.php
+tests/unit/Elasticsearch/Product/ProductCustomFieldsUsedUpdaterTest.php
 tests/unit/Elasticsearch/Product/ProductUpdaterTest.php
 tests/unit/Elasticsearch/Product/LanguageSubscriberTest.php
 tests/unit/Elasticsearch/Product/CustomFieldUpdaterTest.php
@@ -8223,6 +8229,7 @@ tests/unit/Elasticsearch/Product/SearchFieldConfigTest.php
 tests/unit/Elasticsearch/Product/ElasticsearchProductExceptionTest.php
 tests/unit/Elasticsearch/Product/ProductSearchQueryBuilderTest.php
 tests/unit/Elasticsearch/Product/ElasticsearchOptimizeSwitchTest.php
+tests/unit/Elasticsearch/Product/ElasticsearchCustomFieldsMappingHelperTest.php
 tests/unit/Elasticsearch/ElasticsearchTest.php
 tests/unit/Elasticsearch/Admin/AdminSearchRegistryTest.php
 tests/unit/Elasticsearch/Admin/ElasticsearchAdminExceptionTest.php
@@ -8257,7 +8264,6 @@ tests/examples/GetSitemapFileExample.php
 tests/examples/ResolveListingIdsExample.php
 tests/migration/Administration/V6_7/Migration1757057005MailTemplateTest.php
 tests/migration/Administration/V6_7/Migration1744203319MailTemplateTest.php
-tests/migration/Administration/V6_7/Migration1737472122TokenUserTest.php
 tests/migration/Core/DateTimeTest.php
 tests/migration/Core/MigrationForeignDefaultLanguageTest.php
 tests/migration/Core/MigrationLoaderTest.php
@@ -8339,6 +8345,7 @@ tests/migration/Core/V6_8/Migration1743256470RemoveDebitPaymentTest.php
 tests/migration/Core/V6_8/Migration1763125892RemoveProductStatesColumnTest.php
 tests/migration/Core/V6_7/Migration1768233956AddThemeRuntimeConfigUniqueConstraintTest.php
 tests/migration/Core/V6_7/Migration1761739065IncreaseProductWeightPrecisionTest.php
+tests/migration/Core/V6_7/Migration1770705203AddPaymentMethodChangedFlowAndMailTemplateTest.php
 tests/migration/Core/V6_7/Migration1753799632FixStateMachineHistoryIntegrationConstraintTest.php
 tests/migration/Core/V6_7/Migration1756068710FixCustomerAddressLastNameLengthTest.php
 tests/migration/Core/V6_7/Migration1752750234AddIndexToOrderTransactionCreateAndUpdateTest.php
@@ -8370,6 +8377,7 @@ tests/migration/Core/V6_7/Migration1768986102AddInternalColumnToProductStreamTes
 tests/migration/Core/V6_7/Migration1756068712FixOrderAddressLastNameLengthTest.php
 tests/migration/Core/V6_7/Migration1767604966UpdateTotalPriceOrderDeliveryPositionTest.php
 tests/migration/Core/V6_7/Migration1763377575SendEmailAfterPasswordChangeFlowTest.php
+tests/migration/Core/V6_7/Migration1770903396AddRequirementsToServiceSourceConfigTest.php
 tests/migration/Core/V6_7/Migration1743064966CartConfigSubtotalTaxColumnTest.php
 tests/migration/Core/V6_7/Migration1765205483AddTrackOffcanvasCartToAnalyticsTest.php
 tests/migration/Core/V6_7/Migration1728040169AddPrimaryOrderDeliveryTest.php
@@ -8407,10 +8415,13 @@ tests/migration/Core/V6_7/Migration1748326970UpdateMailTemplatesForAccessibility
 tests/migration/Core/V6_7/Migration1749644517AddListingVariantNameSystemConfigOptionTest.php
 tests/migration/Core/V6_7/Migration1742199549MeasurementSystemTableTest.php
 tests/migration/Core/V6_7/Migration1740321707SetAutoplayTimeoutAndSpeedSettingsForProductSliderTest.php
+tests/migration/Core/V6_7/Migration1737472122TokenUserTest.php
 tests/migration/Core/V6_7/Migration1760438732AddConsumedToPaymentTokenTest.php
 tests/migration/Core/V6_7/Migration1742897274RegistrationSalutationToggleConfigTest.php
 tests/migration/Core/V6_7/Migration1763125891AddProductTypeColumnTest.php
 tests/migration/Core/V6_7/Migration1763316536ChangeProductManufacturerLinkTest.php
+tests/migration/Core/V6_7/Migration1771342632AddCorruptedMediaHandlerIndicesTest.php
+tests/migration/Core/CreateMailTemplateTraitTest.php
 tests/migration/Core/MigrationCommandTest.php
 tests/migration/Translations.php
 tests/migration/Elasticsearch/V6_5/Migration1689084023AdminElasticsearchIndexTaskTest.php
@@ -9916,6 +9927,8 @@ tests/integration/Storefront/Theme/ThemeLifecycleHandlerTest.php
 tests/integration/Elasticsearch/Framework/Indexing/ElasticsearchIndexerTest.php
 tests/integration/Elasticsearch/Framework/Command/ElasticsearchResetCommandTest.php
 tests/integration/Elasticsearch/Framework/Command/ElasticsearchAdminResetCommandTest.php
+tests/integration/Elasticsearch/Product/ProductCustomFieldsUsedUpdaterTest.php
+tests/integration/Elasticsearch/Product/ProductSortingStreamSearchTest.php
 tests/integration/Elasticsearch/Product/CustomFieldSetGatewayTest.php
 tests/integration/Elasticsearch/Product/CustomFieldUpdaterTest.php
 tests/integration/Elasticsearch/Product/StopwordTokenFilterTest.php
@@ -11588,6 +11601,7 @@ src/Administration/Resources/app/administration/src/module/index.js
 src/Administration/Resources/app/administration/src/module/sw-mail-template/page/sw-mail-template-create/index.js
 src/Administration/Resources/app/administration/src/module/sw-mail-template/page/sw-mail-template-create/sw-mail-template-create.html.twig
 src/Administration/Resources/app/administration/src/module/sw-mail-template/page/sw-mail-header-footer-create/index.js
+src/Administration/Resources/app/administration/src/module/sw-mail-template/page/sw-mail-header-footer-create/sw-mail-header-footer-create.spec.ts
 src/Administration/Resources/app/administration/src/module/sw-mail-template/page/sw-mail-header-footer-create/sw-mail-header-footer-create.html.twig
 src/Administration/Resources/app/administration/src/module/sw-mail-template/page/sw-mail-template-detail/index.js
 src/Administration/Resources/app/administration/src/module/sw-mail-template/page/sw-mail-template-detail/sw-mail-template-detail.html.twig
@@ -13996,6 +14010,10 @@ src/Administration/Resources/app/administration/src/app/component/extension/sw-e
 src/Administration/Resources/app/administration/src/app/component/extension/sw-extension-icon/sw-extension-icon.spec.js
 src/Administration/Resources/app/administration/src/app/component/extension/sw-extension-icon/sw-extension-icon.scss
 src/Administration/Resources/app/administration/src/app/component/extension/sw-extension-icon/index.ts
+src/Administration/Resources/app/administration/src/app/component/media/sw-model-editor/sw-model-editor.scss
+src/Administration/Resources/app/administration/src/app/component/media/sw-model-editor/index.ts
+src/Administration/Resources/app/administration/src/app/component/media/sw-model-editor/sw-model-editor.html.twig
+src/Administration/Resources/app/administration/src/app/component/media/sw-model-editor/sw-model-editor.spec.ts
 src/Administration/Resources/app/administration/src/app/component/media/sw-media-modal-replace/sw-media-modal-replace.scss
 src/Administration/Resources/app/administration/src/app/component/media/sw-media-modal-replace/index.js
 src/Administration/Resources/app/administration/src/app/component/media/sw-media-modal-replace/sw-media-modal-replace.html.twig
@@ -15140,7 +15158,6 @@ src/Administration/Migration/V6_7/assets/sso_user_invitation_mail.en-GB.txt
 src/Administration/Migration/V6_7/assets/sso_user_invitation_mail.de-DE.html.twig
 src/Administration/Migration/V6_7/Migration1744203319MailTemplate.php
 src/Administration/Migration/V6_7/Migration1757057005MailTemplate.php
-src/Administration/Migration/V6_7/Migration1737472122TokenUser.php
 src/Administration/LICENSE
 src/Administration/.gitattributes
 src/Administration/Service/AdminSearcher.php
@@ -15220,6 +15237,7 @@ src/Core/Content/Newsletter/Aggregate/NewsletterRecipient/NewsletterRecipientDef
 src/Core/Content/Newsletter/Subscriber/NewsletterRecipientSalutationSubscriber.php
 src/Core/Content/Newsletter/SalesChannel/AbstractNewsletterConfirmRoute.php
 src/Core/Content/Newsletter/SalesChannel/AbstractNewsletterSubscribeRoute.php
+src/Core/Content/Newsletter/SalesChannel/NewsletterSubscribeRouteResponse.php
 src/Core/Content/Newsletter/SalesChannel/NewsletterUnsubscribeRoute.php
 src/Core/Content/Newsletter/SalesChannel/AbstractNewsletterUnsubscribeRoute.php
 src/Core/Content/Newsletter/SalesChannel/SalesChannelNewsletterRecipientDefinition.php
@@ -16371,6 +16389,7 @@ src/Core/Installer/Database/DatabaseMigrator.php
 src/Core/Installer/Database/BlueGreenDeploymentService.php
 src/Core/Installer/DependencyInjection/services.xml
 src/Core/Installer/Installer.php
+src/Core/Installer/InstallerException.php
 src/Core/Installer/Subscriber/InstallerLocaleListener.php
 src/Core/Installer/InstallerKernel.php
 src/Core/README.md
@@ -18551,7 +18570,6 @@ src/Core/Framework/App/Manifest/Xml/Tax/Tax.php
 src/Core/Framework/App/Manifest/Xml/AllowedHost/AllowedHosts.php
 src/Core/Framework/App/Manifest/ManifestFactory.php
 src/Core/Framework/App/Manifest/Exception/UnallowedHostException.php
-src/Core/Framework/App/Manifest/Exception/ManifestNotFoundException.php
 src/Core/Framework/App/ShopId/Fingerprint.php
 src/Core/Framework/App/ShopId/ShopIdChangedEvent.php
 src/Core/Framework/App/ShopId/FingerprintMatch.php
@@ -19157,6 +19175,7 @@ src/Core/Framework/DataAbstractionLayer/Exception/InvalidAggregationQueryExcepti
 src/Core/Framework/DataAbstractionLayer/Exception/InconsistentCriteriaIdsException.php
 src/Core/Framework/DataAbstractionLayer/Exception/InvalidPageQueryException.php
 src/Core/Framework/DataAbstractionLayer/Exception/MissingReverseAssociation.php
+src/Core/Framework/DataAbstractionLayer/Exception/UnableToLoadPathException.php
 src/Core/Framework/DataAbstractionLayer/Exception/InvalidFilterQueryException.php
 src/Core/Framework/DataAbstractionLayer/Exception/ImpossibleWriteOrderException.php
 src/Core/Framework/DataAbstractionLayer/Exception/InvalidSortQueryException.php
@@ -19360,6 +19379,7 @@ src/Core/Framework/Adapter/Twig/Node/MacroOverrideNode.php
 src/Core/Framework/Adapter/Twig/TwigEnvironment.php
 src/Core/Framework/Adapter/Twig/TemplateScopeDetector.php
 src/Core/Framework/Adapter/Twig/ConfigurableFilesystemCache.php
+src/Core/Framework/Adapter/Twig/SwTwigFunctionResetter.php
 src/Core/Framework/Adapter/Twig/TemplateIterator.php
 src/Core/Framework/Adapter/Twig/SecurityExtension.php
 src/Core/Framework/Adapter/Twig/StringTemplateRenderer.php
@@ -19929,6 +19949,7 @@ src/Core/Framework/Api/ApiDefinition/Generator/Schema/AdminApi/paths/index.json
 src/Core/Framework/Api/ApiDefinition/Generator/Schema/AdminApi/paths/sync.json
 src/Core/Framework/Api/ApiDefinition/Generator/Schema/AdminApi/paths/health_check.json
 src/Core/Framework/Api/ApiDefinition/Generator/Schema/AdminApi/paths/container_cache.json
+src/Core/Framework/Api/ApiDefinition/Generator/Schema/AdminApi/paths/queue.json
 src/Core/Framework/Api/ApiDefinition/Generator/Schema/AdminApi/paths/app.json
 src/Core/Framework/Api/ApiDefinition/Generator/Schema/AdminApi/paths/customer_impersonation.json
 src/Core/Framework/Api/ApiDefinition/Generator/Schema/AdminApi/paths/cleanup.json
@@ -20222,6 +20243,7 @@ src/Core/Migration/Traits/Translations.php
 src/Core/Migration/Traits/ImportTranslationsTrait.php
 src/Core/Migration/Traits/StateMachineMigrationImporter.php
 src/Core/Migration/Traits/MailSubjectUpdate.php
+src/Core/Migration/Traits/CreateMailTemplateTrait.php
 src/Core/Migration/Traits/MailUpdate.php
 src/Core/Migration/Traits/EnsureThumbnailSizesTrait.php
 src/Core/Migration/V6_5/Migration1688106315AddMissingTransactionMailTemplates.php
@@ -20443,6 +20465,10 @@ src/Core/Migration/Fixtures/mails/order_transaction.state.paid/en-html.html.twig
 src/Core/Migration/Fixtures/mails/order_transaction.state.paid/de-plain.html.twig
 src/Core/Migration/Fixtures/mails/order_transaction.state.paid/en-plain.html.twig
 src/Core/Migration/Fixtures/mails/order_transaction.state.paid/de-html.html.twig
+src/Core/Migration/Fixtures/mails/order.payment_method.changed/en-html.html.twig
+src/Core/Migration/Fixtures/mails/order.payment_method.changed/de-plain.txt.twig
+src/Core/Migration/Fixtures/mails/order.payment_method.changed/de-html.html.twig
+src/Core/Migration/Fixtures/mails/order.payment_method.changed/en-plain.txt.twig
 src/Core/Migration/Fixtures/mails/order.state.open/en-html.html.twig
 src/Core/Migration/Fixtures/mails/order.state.open/de-plain.html.twig
 src/Core/Migration/Fixtures/mails/order.state.open/en-plain.html.twig
@@ -20998,6 +21024,9 @@ src/Core/Migration/V6_4/Migration1665064823AddRuleAreas.php
 src/Core/Migration/V6_4/Migration1625831469AddImportExportCrossSellingProfile.php
 src/Core/Migration/V6_4/Migration1620733405DistinguishablePaymentMethodName.php
 src/Core/Migration/V6_4/Migration1626696809AddImportExportCustomerProfile.php
+src/Core/Migration/Structs/MailCreationState.php
+src/Core/Migration/Structs/MailTemplateCreateStruct.php
+src/Core/Migration/Structs/MailTemplateTypeCreateStruct.php
 src/Core/Migration/V6_6/Migration1732608755MigrateNavigationSettingsForProductSlider.php
 src/Core/Migration/V6_6/Migration1711461579FixDefaultMailFooter.php
 src/Core/Migration/V6_6/Migration1729843379FixBelgianVatIdPattern.php
@@ -21082,6 +21111,7 @@ src/Core/Migration/V6_7/Migration1767861589AddOpenOffcanvasAfterAddToCartConfigS
 src/Core/Migration/V6_7/Migration1756068709FixCustomerAddressFirstNameLength.php
 src/Core/Migration/V6_7/Migration1756068712FixOrderAddressLastNameLength.php
 src/Core/Migration/V6_7/Migration1763125891AddProductTypeColumn.php
+src/Core/Migration/V6_7/Migration1771342632AddCorruptedMediaHandlerIndices.php
 src/Core/Migration/V6_7/Migration1761739065IncreaseProductWeightPrecision.php
 src/Core/Migration/V6_7/Migration1765287397AddConsentTable.php
 src/Core/Migration/V6_7/Migration1756305375AddCategoriesIndexToProduct.php
@@ -21095,6 +21125,7 @@ src/Core/Migration/V6_7/Migration1765287398AddConsentLogTable.php
 src/Core/Migration/V6_7/Migration1751623078AddMeasurementSystemPrivileges.php
 src/Core/Migration/V6_7/Migration1756296414UpdateSnippetSetBaseFiles.php
 src/Core/Migration/V6_7/Migration1742199552SalesChannelMeasurementUnits.php
+src/Core/Migration/V6_7/Migration1770903396AddRequirementsToServiceSourceConfig.php
 src/Core/Migration/V6_7/Migration1756068711FixOrderAddressFirstNameLength.php
 src/Core/Migration/V6_7/Migration1697112043TemporaryPaymentAndShippingTechnicalNames.php
 src/Core/Migration/V6_7/Migration1717572627RemoveImportExportProfileName.php
@@ -21132,6 +21163,7 @@ src/Core/Migration/V6_7/Migration1759390536CartConfigShowTosCheckbox.php
 src/Core/Migration/V6_7/Migration1763316536ChangeProductManufacturerLink.php
 src/Core/Migration/V6_7/Migration1752750234AddIndexToOrderTransactionCreateAndUpdate.php
 src/Core/Migration/V6_7/Migration1754398573ChangeAllLineItemsRuleValueType.php
+src/Core/Migration/V6_7/Migration1737472122TokenUser.php
 src/Core/Migration/V6_7/Migration1742302302RenamePaidTransitionActions.php
 src/Core/Migration/V6_7/Migration1742484083TransitionToAddressInputFieldArrangement.php
 src/Core/Migration/V6_7/Migration1752750171AddIndexToOrderAddressCreateAndUpdate.php
@@ -21142,6 +21174,7 @@ src/Core/Migration/V6_7/Migration1720603803RemoveDefaultPaymentMethodRule.php
 src/Core/Migration/V6_7/Migration1765205483AddTrackOffcanvasCartToAnalytics.php
 src/Core/Migration/V6_7/Migration1762356839AddInternalCommentToStateMachineHistory.php
 src/Core/Migration/V6_7/Migration1754892246FixWordingMistakeInEmailTemplates.php
+src/Core/Migration/V6_7/Migration1770705203AddPaymentMethodChangedFlowAndMailTemplate.php
 src/Core/PlatformRequest.php
 src/Core/LICENSE
 src/Core/locales.php
@@ -21173,10 +21206,15 @@ src/Core/Service/Event/ServiceInstalledEvent.php
 src/Core/Service/Event/PermissionsRevokedEvent.php
 src/Core/Service/AppInfo.php
 src/Core/Service/ServiceClientFactory.php
+src/Core/Service/Requirement/ShopwareAccountRequirement.php
+src/Core/Service/Requirement/RequirementsValidator.php
+src/Core/Service/Requirement/ServiceRequirement.php
+src/Core/Service/Requirement/ServiceConsentRequirement.php
 src/Core/Service/Subscriber/SystemUpdateSubscriber.php
 src/Core/Service/Subscriber/PermissionsSubscriber.php
 src/Core/Service/Subscriber/ServiceLifecycleSubscriber.php
 src/Core/Service/Subscriber/InstalledExtensionsListingLoadedSubscriber.php
+src/Core/Service/Subscriber/ShopwareAccountSubscriber.php
 src/Core/Service/Subscriber/WebhookManagerSubscriber.php
 src/Core/Service/Subscriber/LicenseSyncSubscriber.php
 src/Core/Service/Subscriber/ExtensionCompatibilitiesResolvedSubscriber.php
@@ -21239,10 +21277,8 @@ src/Core/Test/AppSystemTestBehaviour.php
 src/Core/Test/TestDefaults.php
 src/Core/Test/Stub/Symfony/StubKernel.php
 src/Core/Test/Stub/SystemConfigService/StaticSystemConfigService.php
-src/Core/Test/Stub/Redis/RedisMultiCompatibility.php
 src/Core/Test/Stub/Redis/RedisStub.php
 src/Core/Test/Stub/Redis/RedisMultiWrapper.php
-src/Core/Test/Stub/Redis/RedisCompatibility.php
 src/Core/Test/Stub/EventDispatcher/CollectingEventDispatcher.php
 src/Core/Test/Stub/EventDispatcher/AssertingEventDispatcher.php
 src/Core/Test/Stub/MessageBus/CollectingMessageBus.php
@@ -21345,10 +21381,7 @@ src/Core/Profiling/Compiler/RemoveDevServices.php
 src/Core/composer.json
 src/Storefront/Resources/config/routes.xml
 src/Storefront/Resources/config/packages/test/framework.yaml
-src/Storefront/Resources/config/packages/e2e/storefront.yaml
 src/Storefront/Resources/config/packages/framework.yaml
-src/Storefront/Resources/config/packages/storefront.yaml
-src/Storefront/Resources/config/packages/translation.yaml
 src/Storefront/Resources/snippet/storefront.de.json
 src/Storefront/Resources/snippet/storefront.en.json
 src/Storefront/Resources/Schema/AdminApi/theme.json
@@ -23023,10 +23056,12 @@ src/Elasticsearch/Product/ElasticsearchProductDefinition.php
 src/Elasticsearch/Product/AbstractProductSearchQueryBuilder.php
 src/Elasticsearch/Product/ProductSearchQueryBuilder.php
 src/Elasticsearch/Product/SearchKeywordReplacement.php
+src/Elasticsearch/Product/ProductCustomFieldsUsedUpdater.php
 src/Elasticsearch/Product/SearchFieldConfig.php
 src/Elasticsearch/Product/CustomFieldUpdater.php
 src/Elasticsearch/Product/ElasticsearchProductException.php
 src/Elasticsearch/Product/StopwordTokenFilter.php
+src/Elasticsearch/Product/ElasticsearchCustomFieldsMappingHelper.php
 src/Elasticsearch/Product/ProductUpdater.php
 src/Elasticsearch/Migration/Traits/ElasticsearchTriggerTrait.php
 src/Elasticsearch/Migration/V6_5/Migration1689083660ElasticsearchIndexTask.php
