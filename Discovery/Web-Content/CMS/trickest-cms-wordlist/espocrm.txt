@@ -532,6 +532,7 @@ tests/integration/Espo/Settings/AccessTest.php
 tests/integration/Espo/Account/ChangeFieldsTest.php
 tests/integration/Espo/Account/CreateTest.php
 tests/integration/Espo/Account/SearchTest.php
+tests/integration/Espo/Tools/DynamicLogic/CascadingFieldsTest.php
 tests/integration/Espo/Tools/Activities/ComposeEmailAddressListTest.php
 tests/integration/Espo/Tools/WorkingTime/UtilityTest.php
 tests/integration/Espo/Tools/AppSecret/SecretProviderTest.php
@@ -1557,6 +1558,7 @@ client/src/helpers/misc/reactions.js
 client/src/helpers/assignment.js
 client/src/helpers/record-modal.js
 client/src/helpers/file-upload.js
+client/src/helpers/field/cascade-links.js
 client/src/helpers/field/link-icon.js
 client/src/helpers/model/defaults-populator.js
 client/src/helpers/model/default-value-provider.js
@@ -2034,6 +2036,7 @@ client/src/views/admin/field-manager/fields/options/default-multi.js
 client/src/views/admin/field-manager/fields/options/default.js
 client/src/views/admin/field-manager/fields/link-multiple/default.js
 client/src/views/admin/field-manager/fields/options-with-style.js
+client/src/views/admin/field-manager/fields/dynamic-logic-cascading.js
 client/src/views/admin/field-manager/fields/date/after-before.js
 client/src/views/admin/field-manager/fields/date/default.js
 client/src/views/admin/field-manager/fields/foreign/field.js
@@ -5668,6 +5671,7 @@ application/Espo/Core/Utils/Client/DevModeExtensionInitJsFileListProvider.php
 application/Espo/Core/Utils/Client/ActionRenderer.php
 application/Espo/Core/Utils/Client/SecurityParams.php
 application/Espo/Core/Utils/Security/UrlCheck.php
+application/Espo/Core/Utils/Security/HostCheck.php
 application/Espo/Core/Utils/NumberUtil.php
 application/Espo/Core/Utils/DateTime/SystemClock.php
 application/Espo/Core/Utils/DateTime/DateTimeFactory.php
@@ -5819,6 +5823,7 @@ application/Espo/Core/Templates/Metadata/Person/clientDefs.json
 application/Espo/Core/Templates/Metadata/Event/selectDefs.json
 application/Espo/Core/Templates/Metadata/Event/entityDefs.json
 application/Espo/Core/Templates/Metadata/Event/recordDefs.json
+application/Espo/Core/Templates/Metadata/Event/logicDefs.json
 application/Espo/Core/Templates/Metadata/Event/scopes.json
 application/Espo/Core/Templates/Metadata/Event/clientDefs.json
 application/Espo/Core/Templates/Metadata/Base/entityDefs.json
@@ -6461,6 +6466,7 @@ application/Espo/Core/Mail/Account/Account.php
 application/Espo/Core/Mail/Account/ImapParams.php
 application/Espo/Core/Mail/Account/CommonStorageFactory.php
 application/Espo/Core/Mail/Account/Util/NotificationHelper.php
+application/Espo/Core/Mail/Account/Util/AddressUtil.php
 application/Espo/Core/Mail/Sender.php
 application/Espo/Core/Mail/Sender/TransportPreparatorFactory.php
 application/Espo/Core/Mail/Sender/TransportPreparator.php
@@ -6497,8 +6503,10 @@ application/Espo/Core/Hook/Deprecations/BaseHook.php
 application/Espo/Core/Hook/Hook/BeforeSave.php
 application/Espo/Core/Hook/Hook/BeforeRemove.php
 application/Espo/Core/Hook/Hook/AfterSave.php
+application/Espo/Core/Hook/Hook/LateAfterSave.php
 application/Espo/Core/Hook/Hook/AfterRelate.php
 application/Espo/Core/Hook/Hook/AfterMassRelate.php
+application/Espo/Core/Hook/Hook/LateAfterRemove.php
 application/Espo/Core/Hook/Hook/AfterRemove.php
 application/Espo/Core/Hook/Hook/AfterUnrelate.php
 application/Espo/Core/Hook/GeneralInvoker.php
@@ -6562,6 +6570,7 @@ application/Espo/Core/Api/AuthResult.php
 application/Espo/Core/Webhook/Manager.php
 application/Espo/Core/Webhook/Sender.php
 application/Espo/Core/Webhook/Options.php
+application/Espo/Core/Webhook/AddressUtil.php
 application/Espo/Core/Webhook/Queue.php
 application/Espo/Core/Notification/AssignmentNotificator/Params.php
 application/Espo/Core/Notification/AssignmentNotificatorFactory.php
@@ -6812,6 +6821,9 @@ application/Espo/Tools/PopupNotification/Provider.php
 application/Espo/Tools/DynamicLogic/ConditionChecker/Options.php
 application/Espo/Tools/DynamicLogic/Item.php
 application/Espo/Tools/DynamicLogic/Exceptions/BadCondition.php
+application/Espo/Tools/DynamicLogic/CascadingFields/ItemsProvider.php
+application/Espo/Tools/DynamicLogic/CascadingFields/Item.php
+application/Espo/Tools/DynamicLogic/CascadingFields/ValidationHelper.php
 application/Espo/Tools/DynamicLogic/ConditionCheckerFactory.php
 application/Espo/Tools/DynamicLogic/Type.php
 application/Espo/Tools/DynamicLogic/ConditionChecker.php
@@ -7561,6 +7573,7 @@ application/Espo/Classes/FieldValidators/Attachment/Related.php
 application/Espo/Classes/FieldValidators/CurrencyType.php
 application/Espo/Classes/FieldValidators/ChecklistType.php
 application/Espo/Classes/FieldValidators/VarcharType.php
+application/Espo/Classes/FieldValidators/Webhook/Url/NotInternal.php
 application/Espo/Classes/FieldValidators/LinkType.php
 application/Espo/Classes/FieldValidators/Email/EmailAddresses.php
 application/Espo/Classes/FieldValidators/Email/Addresses/MaxCount.php
@@ -7573,6 +7586,9 @@ application/Espo/Classes/FieldValidators/PasswordType.php
 application/Espo/Classes/FieldValidators/EnumType.php
 application/Espo/Classes/FieldValidators/TextType.php
 application/Espo/Classes/FieldValidators/ScheduledJob/Scheduling/Valid.php
+application/Espo/Classes/FieldValidators/Common/Link/CascadingSelect.php
+application/Espo/Classes/FieldValidators/Common/Host/NotInternal.php
+application/Espo/Classes/FieldValidators/Common/LinkMultiple/CascadingSelect.php
 application/Espo/Classes/Jobs/SendEmailNotifications.php
 application/Espo/Classes/Jobs/CheckNewVersion.php
 application/Espo/Classes/Jobs/CheckEmailAccounts.php
@@ -7668,6 +7684,7 @@ application/Espo/Classes/RecordHooks/Note/AssignmentCheck.php
 application/Espo/Classes/RecordHooks/Note/AfterCreate.php
 application/Espo/Classes/RecordHooks/EmailAccount/BeforeCreate.php
 application/Espo/Classes/RecordHooks/EmailAccount/BeforeSave.php
+application/Espo/Classes/RecordHooks/EmailAccount/BeforeSaveValidateHosts.php
 application/Espo/Classes/RecordHooks/User/BeforeUpdate.php
 application/Espo/Classes/RecordHooks/User/BeforeDelete.php
 application/Espo/Classes/RecordHooks/User/BeforeCreate.php
@@ -8944,6 +8961,8 @@ application/Espo/Modules/Crm/Resources/metadata/logicDefs/Task.json
 application/Espo/Modules/Crm/Resources/metadata/logicDefs/Contact.json
 application/Espo/Modules/Crm/Resources/metadata/logicDefs/Opportunity.json
 application/Espo/Modules/Crm/Resources/metadata/logicDefs/CampaignTrackingUrl.json
+application/Espo/Modules/Crm/Resources/metadata/logicDefs/Lead.json
+application/Espo/Modules/Crm/Resources/metadata/logicDefs/Meeting.json
 application/Espo/Modules/Crm/Resources/metadata/dashlets/OpportunitiesByStage.json
 application/Espo/Modules/Crm/Resources/metadata/dashlets/Activities.json
 application/Espo/Modules/Crm/Resources/metadata/dashlets/Opportunities.json

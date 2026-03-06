@@ -1039,7 +1039,6 @@ htdocs/core/modules/facture/mod_facture_terre.php
 htdocs/core/modules/facture/mod_facture_mercure.php
 htdocs/core/modules/facture/doc/doc_generic_invoice_odt.modules.php
 htdocs/core/modules/facture/doc/pdf_octopus.modules.php
-htdocs/core/modules/facture/doc/pdf_crabe.modules.php
 htdocs/core/modules/facture/doc/pdf_sponge.modules.php
 htdocs/core/modules/facture/mod_facture_mars.php
 htdocs/core/modules/modDav.class.php
@@ -5541,6 +5540,7 @@ htdocs/install/mysql/tables/llx_budget_lines-budget.sql
 htdocs/install/mysql/tables/llx_opensurvey_comments-opensurvey.sql
 htdocs/install/mysql/tables/llx_categorie_fournisseur.key.sql
 htdocs/install/mysql/tables/llx_hrm_evaluation_extrafields-hrm.sql
+htdocs/install/mysql/tables/llx_accounting_balance_snapshot-accounting.key.sql
 htdocs/install/mysql/tables/llx_overwrite_trans.key.sql
 htdocs/install/mysql/tables/llx_c_transport_mode.sql
 htdocs/install/mysql/tables/llx_supplier_proposaldet_extrafields.key.sql
@@ -5623,6 +5623,7 @@ htdocs/install/mysql/tables/llx_stocktransfer_stocktransfer_extrafields-stocktra
 htdocs/install/mysql/tables/llx_c_ticket_severity-ticket.key.sql
 htdocs/install/mysql/tables/llx_accounting_bookkeeping-accounting.sql
 htdocs/install/mysql/tables/llx_categorie_societe.key.sql
+htdocs/install/mysql/tables/llx_accounting_balance_snapshot-accounting.sql
 htdocs/install/mysql/tables/llx_categorie_warehouse-stock.key.sql
 htdocs/install/mysql/tables/llx_commande.sql
 htdocs/install/mysql/tables/llx_holiday_users.key.sql
@@ -9418,7 +9419,9 @@ htdocs/langs/en_IE/oauth.lang
 htdocs/langs/en_IE/main.lang
 htdocs/langs/en_IE/bills.lang
 htdocs/langs/en_IE/accountancy.lang
+htdocs/langs/en_IE/exports.lang
 htdocs/langs/en_IE/projects.lang
+htdocs/langs/en_IE/blockedlog.lang
 htdocs/langs/en_IE/stripe.lang
 htdocs/langs/en_IE/supplier_proposal.lang
 htdocs/langs/en_IE/banks.lang
@@ -10927,6 +10930,7 @@ htdocs/langs/ar_IQ/oauth.lang
 htdocs/langs/ar_IQ/main.lang
 htdocs/langs/ar_IQ/bills.lang
 htdocs/langs/ar_IQ/accountancy.lang
+htdocs/langs/ar_IQ/blockedlog.lang
 htdocs/langs/ar_IQ/holiday.lang
 htdocs/langs/ar_IQ/stripe.lang
 htdocs/langs/ar_IQ/banks.lang
@@ -11574,6 +11578,7 @@ htdocs/langs/es_VE/projects.lang
 htdocs/langs/es_VE/salaries.lang
 htdocs/langs/es_VE/eventorganization.lang
 htdocs/langs/es_VE/stocks.lang
+htdocs/langs/es_VE/blockedlog.lang
 htdocs/langs/es_VE/sendings.lang
 htdocs/langs/es_VE/margins.lang
 htdocs/langs/es_VE/compta.lang
@@ -12274,6 +12279,7 @@ htdocs/langs/en_GB/partnership.lang
 htdocs/langs/en_GB/bills.lang
 htdocs/langs/en_GB/accountancy.lang
 htdocs/langs/en_GB/agenda.lang
+htdocs/langs/en_GB/exports.lang
 htdocs/langs/en_GB/projects.lang
 htdocs/langs/en_GB/salaries.lang
 htdocs/langs/en_GB/eventorganization.lang
@@ -12379,7 +12385,9 @@ htdocs/langs/en_KE/other.lang
 htdocs/langs/en_KE/oauth.lang
 htdocs/langs/en_KE/main.lang
 htdocs/langs/en_KE/bills.lang
+htdocs/langs/en_KE/exports.lang
 htdocs/langs/en_KE/projects.lang
+htdocs/langs/en_KE/blockedlog.lang
 htdocs/langs/en_KE/stripe.lang
 htdocs/langs/en_KE/supplier_proposal.lang
 htdocs/langs/en_KE/banks.lang
