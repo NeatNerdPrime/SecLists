@@ -116,6 +116,7 @@ frontend/less/espo/misc/fontawesome/fontawesome/_list.less
 frontend/less/espo/misc/fontawesome/fontawesome/_animated.less
 frontend/less/espo/misc/fontawesome/fontawesome/_stacked.less
 frontend/less/espo/misc/fontawesome/fontawesome/_mixins.less
+frontend/less/espo/misc/fontawesome/fontawesome/brands.less
 frontend/less/espo/misc/fontawesome/fontawesome/v4-shims.less
 frontend/less/espo/misc/fontawesome/fontawesome/_sizing.less
 frontend/less/espo/misc/fontawesome/fontawesome/_shims.less
@@ -243,6 +244,7 @@ tests/unit/Espo/Core/Utils/Database/Orm/Defs/AttributeDefsTest.php
 tests/unit/Espo/Core/Utils/Database/Orm/Defs/IndexDefsTest.php
 tests/unit/Espo/Core/Utils/DateTimeTest.php
 tests/unit/Espo/Core/Utils/JsonTest.php
+tests/unit/Espo/Core/Utils/Security/HostCheckTest.php
 tests/unit/Espo/Core/Utils/FieldUtilTest.php
 tests/unit/Espo/Core/Utils/ObjectUtilTest.php
 tests/unit/Espo/Core/Utils/PreloadTest.php
@@ -1589,6 +1591,7 @@ client/src/acl/user.js
 client/src/acl/email.js
 client/src/acl/foreign.js
 client/src/acl/currency-record-rate.js
+client/src/util/event.js
 client/src/controllers/record.js
 client/src/controllers/about.js
 client/src/controllers/lead-capture-opt-in-confirmation.js
@@ -5712,6 +5715,7 @@ application/Espo/Core/Utils/DateTime.php
 application/Espo/Core/Utils/Language/LanguageFactory.php
 application/Espo/Core/Utils/Language/LanguageProxy.php
 application/Espo/Core/Utils/SystemUser.php
+application/Espo/Core/Utils/Markdown/Markdown.php
 application/Espo/Core/Utils/Resource/Reader/Params.php
 application/Espo/Core/Utils/Resource/FileReader/Params.php
 application/Espo/Core/Utils/Resource/Reader.php
@@ -6097,11 +6101,14 @@ application/Espo/Core/Htmlizer/Helper.php
 application/Espo/Core/Htmlizer/Htmlizer.php
 application/Espo/Core/Htmlizer/CreateForUserParams.php
 application/Espo/Core/HttpClient/Client.php
+application/Espo/Core/HttpClient/RequestCreator.php
 application/Espo/Core/HttpClient/Options.php
 application/Espo/Core/HttpClient/Exceptions/SendException.php
 application/Espo/Core/HttpClient/Exceptions/TooManyRedirectsException.php
 application/Espo/Core/HttpClient/Exceptions/ConnectException.php
 application/Espo/Core/HttpClient/Exceptions/NotAllowedInternalHost.php
+application/Espo/Core/HttpClient/PromiseUtil.php
+application/Espo/Core/HttpClient/Promise.php
 application/Espo/Core/HttpClient/ConnectErrorReason.php
 application/Espo/Core/HttpClient/ClientFactory.php
 application/Espo/Core/HttpClient/Util.php
