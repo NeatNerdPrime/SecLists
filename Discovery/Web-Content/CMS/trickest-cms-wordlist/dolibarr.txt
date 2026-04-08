@@ -134,6 +134,9 @@ test/hurl/gui/projet/10_projet_element.hurl
 test/hurl/gui/save_login_cookie.hurl
 test/hurl/gui/00_HOME.hurl
 test/hurl/gui/10_HOME.hurl
+test/hurl/gui/eventorganization/10_eventorganization.hurl
+test/hurl/gui/eventorganization/10_conferenceorbooth_list.hurl
+test/hurl/gui/eventorganization/conferenceorboothattendee_list.hurl
 test/hurl/gui/comm/mailing/10_mailing.hurl
 test/hurl/gui/admin/10_mails_templates.hurl
 test/hurl/public/onlinesign/00_onlinesign_newonlinesign.hurl
@@ -151,6 +154,7 @@ test/hurl/api/status/10_status.hurl
 test/hurl/api/status/00_status.hurl
 test/hurl/api/warehouses/10_warehouses.hurl
 test/hurl/api/comm/propal/10_propal.hurl
+test/hurl/api/eventattendees/10_eventattendees.hurl
 test/hurl/api/contracts/10_contracts.hurl
 test/hurl/api/mailings/10_mailings.hurl
 test/hurl/api/users/10_groups.hurl
@@ -871,6 +875,7 @@ htdocs/core/modules/user/modules_user.class.php
 htdocs/core/modules/user/doc/doc_generic_user_odt.modules.php
 htdocs/core/modules/modDynamicPrices.class.php
 htdocs/core/modules/modService.class.php
+htdocs/core/modules/modSupplierInvoice.class.php
 htdocs/core/modules/modOauth.class.php
 htdocs/core/modules/modExpenseReport.class.php
 htdocs/core/modules/expedition/mod_expedition_safor.php
@@ -904,6 +909,7 @@ htdocs/core/modules/reception/modules_reception.php
 htdocs/core/modules/reception/doc/pdf_squille.modules.php
 htdocs/core/modules/reception/doc/doc_generic_reception_odt.modules.php
 htdocs/core/modules/modDataPolicy.class.php
+htdocs/core/modules/modSupplierOrder.class.php
 htdocs/core/modules/modFTP.class.php
 htdocs/core/modules/modFournisseur.class.php
 htdocs/core/modules/modBom.class.php
@@ -1142,6 +1148,7 @@ htdocs/core/lib/ajax.lib.php
 htdocs/core/lib/ftp.lib.php
 htdocs/core/lib/date.lib.php
 htdocs/core/lib/stock.lib.php
+htdocs/core/lib/supplier_invoice.lib.php
 htdocs/core/lib/phpsessionindb.lib.php
 htdocs/core/lib/takepos.lib.php
 htdocs/core/lib/receiptprinter.lib.php
@@ -1181,6 +1188,7 @@ htdocs/core/lib/order.lib.php
 htdocs/core/lib/usergroups.lib.php
 htdocs/core/lib/api.lib.php
 htdocs/core/lib/parsemd.lib.php
+htdocs/core/lib/supplier_order.lib.php
 htdocs/core/lib/hrm.lib.php
 htdocs/core/lib/agenda.lib.php
 htdocs/core/lib/functionscli.lib.php
@@ -5978,6 +5986,7 @@ htdocs/blockedlog/class/actions_blockedlog.class.php
 htdocs/blockedlog/README.md
 htdocs/blockedlog/ajax/block-info.php
 htdocs/blockedlog/ajax/block-add.php
+htdocs/blockedlog/admin/blockedlog_control.php
 htdocs/blockedlog/admin/blockedlog_list.php
 htdocs/blockedlog/admin/blockedlog_archives.php
 htdocs/blockedlog/admin/filecheck.php
@@ -6483,6 +6492,7 @@ htdocs/public/webportal/tpl/header_login.tpl.php
 htdocs/public/webportal/tpl/card-view-actions-buttons.tpl.php
 htdocs/public/webportal/tpl/card-view-lines.tpl.php
 htdocs/public/webportal/webportal.main.inc.php
+htdocs/public/webportal/antispamimage.php
 htdocs/public/webportal/ajax/ajaxfield.php
 htdocs/public/webportal/index.php
 htdocs/public/webportal/js/modal.js
@@ -6934,6 +6944,7 @@ htdocs/modulebuilder/template/sql/llx_mymodule_myobject_extrafields.key.sql
 htdocs/modulebuilder/template/sql/llx_mymodule_myobject.sql
 htdocs/modulebuilder/template/sql/dolibarr_allversions.sql
 htdocs/modulebuilder/template/sql/data.sql
+htdocs/modulebuilder/template/stats/myobject_index.php
 htdocs/modulebuilder/template/build/buildzip.php
 htdocs/modulebuilder/template/build/makepack-mymodule.conf
 htdocs/modulebuilder/template/build/doxygen/mymodule.doxyfile
@@ -7112,6 +7123,12 @@ htdocs/compta/deplacement/index.php
 htdocs/compta/deplacement/stats/index.php
 htdocs/compta/deplacement/document.php
 htdocs/compta/deplacement/info.php
+htdocs/supplier_invoice/admin/supplierinvoice_rec_extrafields.php
+htdocs/supplier_invoice/admin/supplierinvoice_extrafields.php
+htdocs/supplier_invoice/admin/supplierinvoicedet_extrafields.php
+htdocs/supplier_invoice/admin/supplier_payment.php
+htdocs/supplier_invoice/admin/supplier_invoice.php
+htdocs/supplier_invoice/admin/supplierinvoicedet_rec_extrafields.php
 htdocs/salaries/virement_request.php
 htdocs/salaries/list.php
 htdocs/salaries/payment_salary.php
@@ -7136,6 +7153,7 @@ htdocs/supplier_proposal/class/api_supplier_proposals.class.php
 htdocs/supplier_proposal/card.php
 htdocs/supplier_proposal/index.php
 htdocs/supplier_proposal/admin/supplier_proposal_extrafields.php
+htdocs/supplier_proposal/admin/supplier_proposal.php
 htdocs/supplier_proposal/admin/supplier_proposaldet_extrafields.php
 htdocs/supplier_proposal/note.php
 htdocs/supplier_proposal/document.php
@@ -7453,8 +7471,6 @@ htdocs/admin/prelevement.php
 htdocs/admin/delais.php
 htdocs/admin/contract.php
 htdocs/admin/stock.php
-htdocs/admin/supplier_order.php
-htdocs/admin/supplierorder_extrafields.php
 htdocs/admin/bomline_extrafields.php
 htdocs/admin/knowledgerecord_extrafields.php
 htdocs/admin/deliverydet_extrafields.php
@@ -7518,16 +7534,12 @@ htdocs/admin/orderdet_extrafields.php
 htdocs/admin/clicktodial.php
 htdocs/admin/paymentbybanktransfer.php
 htdocs/admin/receptiondet_batch_extrafields.php
-htdocs/admin/supplierinvoice_rec_extrafields.php
 htdocs/admin/loan.php
 htdocs/admin/ihm.php
-htdocs/admin/supplierinvoice_extrafields.php
 htdocs/admin/dav.php
 htdocs/admin/export.php
 htdocs/admin/mails_senderprofile_list.php
 htdocs/admin/company.php
-htdocs/admin/supplierinvoicedet_extrafields.php
-htdocs/admin/supplier_payment.php
 htdocs/admin/remotestore/class/externalModules.class.php
 htdocs/admin/agenda_reminder.php
 htdocs/admin/agenda_extsites.php
@@ -7580,7 +7592,6 @@ htdocs/admin/tools/ui/dolibarr-context/langs-tool.php
 htdocs/admin/tools/ui/dolibarr-context/index.php
 htdocs/admin/tools/ui/dolibarr-context/inc_seteventmessage.php
 htdocs/admin/tools/ui/js/documentation.js
-htdocs/admin/supplierorderdet_extrafields.php
 htdocs/admin/fckeditor.php
 htdocs/admin/reception_setup.php
 htdocs/admin/mrp_extrafields.php
@@ -7597,7 +7608,6 @@ htdocs/admin/mails_passwordreset.php
 htdocs/admin/bom_extrafields.php
 htdocs/admin/delivery.php
 htdocs/admin/barcode.php
-htdocs/admin/supplier_invoice.php
 htdocs/admin/menus.php
 htdocs/admin/ticket_extrafields.php
 htdocs/admin/mrp_production_extrafields.php
@@ -7611,7 +7621,6 @@ htdocs/admin/propal.php
 htdocs/admin/subtotals.php
 htdocs/admin/emailcollector_card.php
 htdocs/admin/company_socialnetworks.php
-htdocs/admin/supplier_proposal.php
 htdocs/admin/mails_ticket.php
 htdocs/admin/boxes.php
 htdocs/admin/bank_payments_extrafields.php
@@ -7637,7 +7646,6 @@ htdocs/admin/expeditiondet_extrafields.php
 htdocs/admin/debugbar.php
 htdocs/admin/eventorganization_confboothattendee_extrafields.php
 htdocs/admin/mails.php
-htdocs/admin/supplierinvoicedet_rec_extrafields.php
 htdocs/admin/agenda_extrafields.php
 htdocs/ticket/contact.php
 htdocs/ticket/list.php
@@ -8186,7 +8194,6 @@ htdocs/langs/de_AT/supplier_proposal.lang
 htdocs/langs/de_AT/propal.lang
 htdocs/langs/de_AT/banks.lang
 htdocs/langs/de_AT/languages.lang
-htdocs/langs/de_AT/cashdesk.lang
 htdocs/langs/de_AT/withdrawals.lang
 htdocs/langs/de_AT/errors.lang
 htdocs/langs/de_AT/members.lang
@@ -8792,7 +8799,6 @@ htdocs/langs/fr_GA/compta.lang
 htdocs/langs/fr_GA/knowledgemanagement.lang
 htdocs/langs/fr_GA/categories.lang
 htdocs/langs/fr_GA/stripe.lang
-htdocs/langs/fr_GA/supplier_proposal.lang
 htdocs/langs/fr_GA/banks.lang
 htdocs/langs/fr_GA/cashdesk.lang
 htdocs/langs/fr_GA/errors.lang
@@ -9422,19 +9428,13 @@ htdocs/langs/ne_NP/resource.lang
 htdocs/langs/ne_NP/loan.lang
 htdocs/langs/ne_NP/boxes.lang
 htdocs/langs/en_IE/companies.lang
-htdocs/langs/en_IE/modulebuilder.lang
 htdocs/langs/en_IE/other.lang
 htdocs/langs/en_IE/oauth.lang
 htdocs/langs/en_IE/main.lang
 htdocs/langs/en_IE/bills.lang
 htdocs/langs/en_IE/accountancy.lang
-htdocs/langs/en_IE/exports.lang
-htdocs/langs/en_IE/projects.lang
-htdocs/langs/en_IE/blockedlog.lang
 htdocs/langs/en_IE/stripe.lang
-htdocs/langs/en_IE/supplier_proposal.lang
 htdocs/langs/en_IE/banks.lang
-htdocs/langs/en_IE/cashdesk.lang
 htdocs/langs/en_IE/errors.lang
 htdocs/langs/en_IE/members.lang
 htdocs/langs/en_IE/ticket.lang
@@ -9867,7 +9867,6 @@ htdocs/langs/fr_CM/stripe.lang
 htdocs/langs/fr_CM/supplier_proposal.lang
 htdocs/langs/fr_CM/propal.lang
 htdocs/langs/fr_CM/banks.lang
-htdocs/langs/fr_CM/cashdesk.lang
 htdocs/langs/fr_CM/errors.lang
 htdocs/langs/fr_CM/members.lang
 htdocs/langs/fr_CM/ticket.lang
@@ -9971,7 +9970,6 @@ htdocs/langs/fr_BE/knowledgemanagement.lang
 htdocs/langs/fr_BE/categories.lang
 htdocs/langs/fr_BE/sms.lang
 htdocs/langs/fr_BE/stripe.lang
-htdocs/langs/fr_BE/supplier_proposal.lang
 htdocs/langs/fr_BE/banks.lang
 htdocs/langs/fr_BE/cashdesk.lang
 htdocs/langs/fr_BE/withdrawals.lang
@@ -10939,7 +10937,6 @@ htdocs/langs/ar_IQ/oauth.lang
 htdocs/langs/ar_IQ/main.lang
 htdocs/langs/ar_IQ/bills.lang
 htdocs/langs/ar_IQ/accountancy.lang
-htdocs/langs/ar_IQ/blockedlog.lang
 htdocs/langs/ar_IQ/holiday.lang
 htdocs/langs/ar_IQ/stripe.lang
 htdocs/langs/ar_IQ/banks.lang
@@ -11587,7 +11584,6 @@ htdocs/langs/es_VE/projects.lang
 htdocs/langs/es_VE/salaries.lang
 htdocs/langs/es_VE/eventorganization.lang
 htdocs/langs/es_VE/stocks.lang
-htdocs/langs/es_VE/blockedlog.lang
 htdocs/langs/es_VE/sendings.lang
 htdocs/langs/es_VE/margins.lang
 htdocs/langs/es_VE/compta.lang
@@ -12288,7 +12284,6 @@ htdocs/langs/en_GB/partnership.lang
 htdocs/langs/en_GB/bills.lang
 htdocs/langs/en_GB/accountancy.lang
 htdocs/langs/en_GB/agenda.lang
-htdocs/langs/en_GB/exports.lang
 htdocs/langs/en_GB/projects.lang
 htdocs/langs/en_GB/salaries.lang
 htdocs/langs/en_GB/eventorganization.lang
@@ -12389,18 +12384,12 @@ htdocs/langs/sq_AL/resource.lang
 htdocs/langs/sq_AL/loan.lang
 htdocs/langs/sq_AL/boxes.lang
 htdocs/langs/en_KE/companies.lang
-htdocs/langs/en_KE/modulebuilder.lang
 htdocs/langs/en_KE/other.lang
 htdocs/langs/en_KE/oauth.lang
 htdocs/langs/en_KE/main.lang
 htdocs/langs/en_KE/bills.lang
-htdocs/langs/en_KE/exports.lang
-htdocs/langs/en_KE/projects.lang
-htdocs/langs/en_KE/blockedlog.lang
 htdocs/langs/en_KE/stripe.lang
-htdocs/langs/en_KE/supplier_proposal.lang
 htdocs/langs/en_KE/banks.lang
-htdocs/langs/en_KE/cashdesk.lang
 htdocs/langs/en_KE/errors.lang
 htdocs/langs/en_KE/members.lang
 htdocs/langs/en_KE/users.lang
@@ -12606,7 +12595,6 @@ htdocs/langs/fr_CI/blockedlog.lang
 htdocs/langs/fr_CI/knowledgemanagement.lang
 htdocs/langs/fr_CI/categories.lang
 htdocs/langs/fr_CI/stripe.lang
-htdocs/langs/fr_CI/supplier_proposal.lang
 htdocs/langs/fr_CI/banks.lang
 htdocs/langs/fr_CI/cashdesk.lang
 htdocs/langs/fr_CI/errors.lang
@@ -13987,7 +13975,6 @@ htdocs/langs/fr_CH/compta.lang
 htdocs/langs/fr_CH/knowledgemanagement.lang
 htdocs/langs/fr_CH/categories.lang
 htdocs/langs/fr_CH/stripe.lang
-htdocs/langs/fr_CH/supplier_proposal.lang
 htdocs/langs/fr_CH/banks.lang
 htdocs/langs/fr_CH/cashdesk.lang
 htdocs/langs/fr_CH/errors.lang
@@ -14435,6 +14422,9 @@ htdocs/ai/admin/log_viewer.php
 htdocs/ai/admin/setup.php
 htdocs/ai/admin/server_mcp.php
 htdocs/ai/admin/custom_prompt.php
+htdocs/supplier_order/admin/supplier_order.php
+htdocs/supplier_order/admin/supplierorder_extrafields.php
+htdocs/supplier_order/admin/supplierorderdet_extrafields.php
 htdocs/document.php
 htdocs/exports/class/export.class.php
 htdocs/exports/export.php

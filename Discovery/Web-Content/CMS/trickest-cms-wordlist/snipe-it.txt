@@ -271,6 +271,7 @@ tests/Feature/Consumables/Ui/CreateConsumableTest.php
 tests/Feature/Consumables/Ui/ConsumableIndexTest.php
 tests/Feature/Consumables/Ui/StoreConsumableWithFullMultipleCompanySupportTest.php
 tests/Feature/Consumables/Ui/UpdateConsumableTest.php
+tests/Feature/Search/SearchableTraitTest.php
 tests/Feature/Licenses/Api/DeleteLicensesTest.php
 tests/Feature/Licenses/Api/LicenseUploadTest.php
 tests/Feature/Licenses/Api/LicenseIndexTest.php
@@ -288,6 +289,7 @@ tests/Feature/Depreciations/Ui/DepreciationsIndexTest.php
 tests/Feature/Depreciations/Ui/CreateDepreciationTest.php
 tests/Feature/LicenseSeats/Api/LicenseSeatUpdateTest.php
 tests/Feature/Groups/Api/DeleteGroupsTest.php
+tests/Feature/Groups/Api/UpdateGroupTest.php
 tests/Feature/Groups/Api/StoreGroupTest.php
 tests/Feature/Groups/Ui/CreateGroupTest.php
 tests/Feature/Groups/Ui/ShowGroupTest.php
@@ -311,6 +313,11 @@ tests/Unit/Models/Labels/DefaultLabelTest.php
 tests/Unit/Models/Labels/FieldOptionTest.php
 tests/Unit/CustomFieldTest.php
 tests/Unit/NotificationTest.php
+tests/Unit/Presenters/ComponentPresenterTest.php
+tests/Unit/Presenters/ConsumablePresenterTest.php
+tests/Unit/Presenters/LicensePresenterTest.php
+tests/Unit/Presenters/AssetPresenterTest.php
+tests/Unit/Presenters/AccessoryPresenterTest.php
 tests/Unit/SnipeModelTest.php
 tests/Unit/LocationTest.php
 tests/Unit/Helpers/HelperTest.php
@@ -323,6 +330,8 @@ tests/Unit/Mail/CheckoutAssetMailTest.php
 tests/Unit/CategoryTest.php
 tests/Unit/AssetTest.php
 tests/Unit/DatabaseSslConfigurationTest.php
+tests/Unit/Actions/Permissions/NormalizePermissionsPayloadActionTest.php
+tests/Unit/Actions/Permissions/PreserveUnauthorizedPrivilegedPermissionsActionTest.php
 tests/Unit/Labels/LabelTest.php
 tests/Unit/ComponentTest.php
 tests/Unit/AssetModelTest.php
@@ -6841,6 +6850,7 @@ resources/views/blade/well.blade.php
 resources/views/blade/page-column.blade.php
 resources/views/blade/tabs/upload-tab.blade.php
 resources/views/blade/tabs/consumable-tab.blade.php
+resources/views/blade/tabs/note-tab.blade.php
 resources/views/blade/tabs/nav-item.blade.php
 resources/views/blade/tabs/model-tab.blade.php
 resources/views/blade/tabs/model-files-tab.blade.php
@@ -7542,7 +7552,6 @@ routes/web/models.php
 routes/web/licenses.php
 routes/web/hardware.php
 crowdin.yml
-phpmd.xml
 TESTING.md
 Dockerfile
 CONTRIBUTING.md
@@ -8038,6 +8047,8 @@ app/Actions/Categories/DestroyCategoryAction.php
 app/Actions/CheckoutRequests/CreateCheckoutRequestAction.php
 app/Actions/CheckoutRequests/CancelCheckoutRequestAction.php
 app/Actions/Manufacturers/DeleteManufacturerAction.php
+app/Actions/Permissions/PreserveUnauthorizedPrivilegedPermissionsAction.php
+app/Actions/Permissions/NormalizePermissionsPayloadAction.php
 app/Services/Saml.php
 app/Services/SnipeTranslator.php
 app/Services/PredefinedKitCheckoutService.php
