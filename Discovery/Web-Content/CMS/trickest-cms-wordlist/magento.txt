@@ -8414,6 +8414,7 @@ dev/tests/integration/testsuite/Magento/Checkout/Model/SessionTest.php
 dev/tests/integration/testsuite/Magento/Checkout/Model/CaptchaRateLimiterTest.php
 dev/tests/integration/testsuite/Magento/Checkout/Model/DownloadableProductPurchaseTest.php
 dev/tests/integration/testsuite/Magento/Checkout/Model/ShippingAddressWithoutCompanyTest.php
+dev/tests/integration/testsuite/Magento/Checkout/Model/PaymentInformationManagementTest.php
 dev/tests/integration/testsuite/Magento/Checkout/Model/ShippingInformationManagementTest.php
 dev/tests/integration/testsuite/Magento/Checkout/_files/quote_with_address_saved.php
 dev/tests/integration/testsuite/Magento/Checkout/_files/quote_with_bundle_product_rollback.php
@@ -14046,6 +14047,7 @@ app/code/Magento/Backend/view/adminhtml/web/js/media-uploader.js
 app/code/Magento/Backend/view/adminhtml/web/js/bootstrap/editor.js
 app/code/Magento/Backend/view/adminhtml/web/js/dashboard/chart.js
 app/code/Magento/Backend/view/adminhtml/web/js/dashboard/totals.js
+app/code/Magento/Backend/view/adminhtml/web/js/system/config/js-merge-notice.js
 app/code/Magento/Backend/view/adminhtml/web/js/validate-store.js
 app/code/Magento/Backend/view/adminhtml/web/js/store-switcher.js
 app/code/Magento/Backend/view/adminhtml/web/js/delete-with-confirm.js
@@ -14072,6 +14074,7 @@ app/code/Magento/Backend/view/adminhtml/layout/adminhtml_dashboard_index.xml
 app/code/Magento/Backend/view/adminhtml/layout/adminhtml_system_design_grid_block.xml
 app/code/Magento/Backend/view/adminhtml/layout/adminhtml_denied.xml
 app/code/Magento/Backend/view/adminhtml/layout/adminhtml_system_design_index.xml
+app/code/Magento/Backend/view/adminhtml/layout/adminhtml_system_config_edit.xml
 app/code/Magento/Backend/view/adminhtml/layout/adminhtml_dashboard_customersmost.xml
 app/code/Magento/Backend/view/adminhtml/layout/adminhtml_system_store_grid_block.xml
 app/code/Magento/Backend/view/adminhtml/layout/empty.xml
@@ -14105,6 +14108,7 @@ app/code/Magento/Backend/view/adminhtml/templates/dashboard/index.phtml
 app/code/Magento/Backend/view/adminhtml/templates/dashboard/searches.phtml
 app/code/Magento/Backend/view/adminhtml/templates/dashboard/store/switcher.phtml
 app/code/Magento/Backend/view/adminhtml/templates/dashboard/totalbar.phtml
+app/code/Magento/Backend/view/adminhtml/templates/system/config/js_merge_notice.phtml
 app/code/Magento/Backend/view/adminhtml/templates/system/shipping/applicable_country.phtml
 app/code/Magento/Backend/view/adminhtml/templates/system/search.phtml
 app/code/Magento/Backend/view/adminhtml/templates/system/autocomplete.phtml
@@ -17954,6 +17958,7 @@ app/code/Magento/Quote/Test/Unit/Model/Product/Plugin/UpdateQuoteItemsTest.php
 app/code/Magento/Quote/Test/Unit/Model/Backpressure/WebapiRequestTypeExtractorTest.php
 app/code/Magento/Quote/Test/Unit/Model/Backpressure/OrderLimitConfigManagerTest.php
 app/code/Magento/Quote/Test/Unit/Model/Webapi/ParamOverriderCartIdTest.php
+app/code/Magento/Quote/Test/Unit/Model/QuoteAddressValidatorTest.php
 app/code/Magento/Quote/Test/Unit/Model/Quote/ShippingAssignment/ShippingProcessorTest.php
 app/code/Magento/Quote/Test/Unit/Model/Quote/ShippingAssignment/ShippingAssignmentProcessorTest.php
 app/code/Magento/Quote/Test/Unit/Model/Quote/Item/ToOrderItemTest.php
@@ -23257,6 +23262,7 @@ app/code/Magento/AwsS3/Test/Mftf/Suite/RemoteStorageAwsS3EnabledSuite.xml
 app/code/Magento/AwsS3/Test/Mftf/test-dependency-allowlist
 app/code/Magento/AwsS3/Test/Mftf/test-dependency-errors-detailed
 app/code/Magento/AwsS3/Test/Unit/Driver/AwsS3FactoryTest.php
+app/code/Magento/AwsS3/Test/Unit/Driver/AwsS3FactoryObjectUrlTest.php
 app/code/Magento/AwsS3/Test/Unit/Driver/CredentialsCacheTest.php
 app/code/Magento/AwsS3/Test/Unit/Driver/AwsS3Test.php
 app/code/Magento/AwsS3/registration.php
@@ -29788,6 +29794,7 @@ app/code/Magento/ConfigurableProduct/Test/Mftf/LICENSE.txt
 app/code/Magento/ConfigurableProduct/Test/Fixture/Product.php
 app/code/Magento/ConfigurableProduct/Test/Fixture/Attribute.php
 app/code/Magento/ConfigurableProduct/Test/Fixture/AddProductToCart.php
+app/code/Magento/ConfigurableProduct/Test/Fixture/ConfigurableProductWithCustomOptionAndSimpleTierPrice.php
 app/code/Magento/ConfigurableProduct/Test/Unit/ViewModel/UploadResizeConfigValueTest.php
 app/code/Magento/ConfigurableProduct/Test/Unit/Observer/HideUnsupportedAttributeTypesTest.php
 app/code/Magento/ConfigurableProduct/Test/Unit/Model/Product/ProductOptionExtensionAttributes.php
@@ -31470,6 +31477,7 @@ app/code/Magento/Swatches/Test/Mftf/ActionGroup/AddTextSwatchToProductActionGrou
 app/code/Magento/Swatches/Test/Mftf/ActionGroup/SetColorPickerByHexActionGroup.xml
 app/code/Magento/Swatches/Test/Mftf/ActionGroup/AddVisualSwatchActionGroup.xml
 app/code/Magento/Swatches/Test/Mftf/ActionGroup/AdminAddEmptyVisualSwatchActionGroup.xml
+app/code/Magento/Swatches/Test/Mftf/ActionGroup/AdminAssertVisualSwatchStorefrontAndListingDefaultsActionGroup.xml
 app/code/Magento/Swatches/Test/Mftf/ActionGroup/AddTextSwatchToProductWithTwoOptionsActionGroup.xml
 app/code/Magento/Swatches/Test/Mftf/ActionGroup/AssertStorefrontSwatchColorActionGroup.xml
 app/code/Magento/Swatches/Test/Mftf/ActionGroup/AdminUploadFileInVisualSwatchActionGroup.xml
@@ -31483,6 +31491,7 @@ app/code/Magento/Swatches/Test/Mftf/ActionGroup/AdminSelectTextSwatchAttributeOp
 app/code/Magento/Swatches/Test/Mftf/ActionGroup/AddVisualSwatchToProductWithStorefrontConfigActionGroup.xml
 app/code/Magento/Swatches/Test/Mftf/ActionGroup/StorefrontAddProductWithSwatchesTextOptionToTheCartActionGroup.xml
 app/code/Magento/Swatches/Test/Mftf/ActionGroup/AdminUpdateAttributeUsedInProductListingActionGroup.xml
+app/code/Magento/Swatches/Test/Mftf/ActionGroup/AdminOpenSwatchMenuChooseColorAndWaitHexInputActionGroup.xml
 app/code/Magento/Swatches/Test/Mftf/ActionGroup/CreateConfigurableProductWithTextSwatchAttributeActionGroup.xml
 app/code/Magento/Swatches/Test/Mftf/ActionGroup/StorefrontSelectSwatchOptionOnProductPageAndCheckImageActionGroup.xml
 app/code/Magento/Swatches/Test/Mftf/ActionGroup/AddVisualSwatchToProductActionGroup.xml
@@ -31495,6 +31504,7 @@ app/code/Magento/Swatches/Test/Mftf/Test/StorefrontFilterByImageSwatchTest.xml
 app/code/Magento/Swatches/Test/Mftf/Test/AdminCheckTextSwatchAttributeAddedViaApiTest.xml
 app/code/Magento/Swatches/Test/Mftf/Test/AdminCreateVisualSwatchWithNonValidOptionsTest.xml
 app/code/Magento/Swatches/Test/Mftf/Test/StorefrontFilterByVisualSwatchTest.xml
+app/code/Magento/Swatches/Test/Mftf/Test/AdminVerifyDefaultStorefrontPropertiesForVisualSwatchAttributeTest.xml
 app/code/Magento/Swatches/Test/Mftf/Test/StorefrontConfigurableProductSwatchMinimumPriceTest/StorefrontConfigurableProductSwatchMinimumPriceProductPageTest.xml
 app/code/Magento/Swatches/Test/Mftf/Test/StorefrontConfigurableProductSwatchMinimumPriceTest/StorefrontConfigurableProductSwatchMinimumPriceCategoryPageTest.xml
 app/code/Magento/Swatches/Test/Mftf/Test/StorefrontFilterByTextSwatchTest.xml
@@ -31504,6 +31514,7 @@ app/code/Magento/Swatches/Test/Mftf/Test/StorefrontConfigurableProductSwatchTier
 app/code/Magento/Swatches/Test/Mftf/Test/StorefrontConfigurableProductSwatchWithDisplayOutOfStockEnabledTest.xml
 app/code/Magento/Swatches/Test/Mftf/Test/StorefrontConfigurableProductImageChangesByLayeredNavigationTest.xml
 app/code/Magento/Swatches/Test/Mftf/Test/AdminSimpleProductwithTextandVisualSwatchTest.xml
+app/code/Magento/Swatches/Test/Mftf/Test/AdminVisualSwatchColorPickerHexPersistsAfterEnterTest.xml
 app/code/Magento/Swatches/Test/Mftf/Test/StorefrontSelectedByQueryParamsConfigurableSwatchOptionsThumbImagesTest.xml
 app/code/Magento/Swatches/Test/Mftf/Test/SwatchesAreVisibleInLayeredNavigationTest.xml
 app/code/Magento/Swatches/Test/Mftf/Test/StorefrontRedirectToFirstPageOnFilteringBySwatchTest.xml
@@ -35845,6 +35856,7 @@ app/code/Magento/Sales/Setup/SalesOrderPaymentDataConverter.php
 app/code/Magento/Sales/Setup/SalesSetup.php
 app/code/Magento/Sales/Setup/Patch/Data/FillQuoteAddressIdInSalesOrderAddress.php
 app/code/Magento/Sales/Setup/Patch/Data/ConvertSerializedDataToJson.php
+app/code/Magento/Sales/Setup/Patch/Data/PopulatePeriodMonthColumn.php
 app/code/Magento/Sales/Setup/Patch/Data/WishlistDataCleanUp.php
 app/code/Magento/Sales/Setup/Patch/Data/UpdateEntityTypes.php
 app/code/Magento/Sales/Setup/Patch/Data/UpdateEntityTypeModelForInvoice.php
@@ -36380,6 +36392,8 @@ app/code/Magento/CatalogRuleConfigurable/Test/Mftf/Test/AdminApplyCatalogRuleFor
 app/code/Magento/CatalogRuleConfigurable/Test/Mftf/README.md
 app/code/Magento/CatalogRuleConfigurable/Test/Mftf/LICENSE_AFL.txt
 app/code/Magento/CatalogRuleConfigurable/Test/Mftf/LICENSE.txt
+app/code/Magento/CatalogRuleConfigurable/Test/Fixture/ConfigurableProductWithPercentCatalogRule.php
+app/code/Magento/CatalogRuleConfigurable/Test/Fixture/DisableConfigurableParentAfterChildrenCatalogRules.php
 app/code/Magento/CatalogRuleConfigurable/Test/Unit/Plugin/CatalogRule/Model/Rule/ConfigurableProductHandlerTest.php
 app/code/Magento/CatalogRuleConfigurable/Test/Unit/Plugin/CatalogRule/Model/Rule/ValidationTest.php
 app/code/Magento/CatalogRuleConfigurable/registration.php
@@ -37158,6 +37172,7 @@ app/code/Magento/Catalog/Test/Mftf/Test/AdminUpdateSimpleProductWithRegularPrice
 app/code/Magento/Catalog/Test/Mftf/Test/AdminCreateAndEditSimpleProductSettingsTest.xml
 app/code/Magento/Catalog/Test/Mftf/Test/AddProductToCartWithMinimumQuantityTest.xml
 app/code/Magento/Catalog/Test/Mftf/Test/StorefrontCategoryPageWithCategoryFilterTest.xml
+app/code/Magento/Catalog/Test/Mftf/Test/StorefrontProductPriceHebrewIsraelLocaleTest.xml
 app/code/Magento/Catalog/Test/Mftf/Test/StorefrontVerifyThatRecentlyOrderedWidgetShowOnlyFiveProductTest.xml
 app/code/Magento/Catalog/Test/Mftf/Test/StorefrontProductSortByPositionInDescOrderTest.xml
 app/code/Magento/Catalog/Test/Mftf/Test/AdminCreateCategoryWithInactiveCategoryTest.xml

@@ -2340,6 +2340,7 @@ app/bundles/CampaignBundle/Tests/Executioner/ScheduledExecutionerExtendTriggerDa
 app/bundles/CampaignBundle/Tests/Executioner/Helper/EventRedirectionHelperTest.php
 app/bundles/CampaignBundle/Tests/Executioner/KickoffExecutionerTest.php
 app/bundles/CampaignBundle/Tests/Executioner/Scheduler/Mode/IntervalTest.php
+app/bundles/CampaignBundle/Tests/Executioner/Scheduler/EventSchedulerExtendTriggerDateFunctionalTest.php
 app/bundles/CampaignBundle/Tests/Executioner/Scheduler/EventSchedulerTest.php
 app/bundles/CampaignBundle/Tests/Executioner/EventExecutionerTest.php
 app/bundles/CampaignBundle/Tests/Executioner/ScheduledExecutionerFunctionalTest.php
@@ -2364,12 +2365,14 @@ app/bundles/CampaignBundle/Tests/Membership/MembershipManagerTest.php
 app/bundles/CampaignBundle/Tests/Controller/CampaignControllerFunctionalTest.php
 app/bundles/CampaignBundle/Tests/Controller/VisitedPageConditionControllerFunctionalTest.php
 app/bundles/CampaignBundle/Tests/Controller/CampaignProjectSearchFunctionalTest.php
+app/bundles/CampaignBundle/Tests/Controller/SourceControllerUnitTest.php
 app/bundles/CampaignBundle/Tests/Controller/CampaignControllerTest.php
 app/bundles/CampaignBundle/Tests/Controller/Api/CampaignApiControllerFunctionalTest.php
 app/bundles/CampaignBundle/Tests/Controller/Api/ContactCampaignApiControllerFunctionalTest.php
 app/bundles/CampaignBundle/Tests/Controller/AjaxControllerFunctionalTest.php
 app/bundles/CampaignBundle/Tests/Controller/CampaignMetricsControllerFunctionalTest.php
 app/bundles/CampaignBundle/Tests/Controller/CampaignUnpublishedWorkflowFunctionalTest.php
+app/bundles/CampaignBundle/Tests/Controller/CampaignControllerUnitTest.php
 app/bundles/CampaignBundle/Tests/Controller/SourceControllerTest.php
 app/bundles/CampaignBundle/Tests/Controller/CampaignMapStatsControllerTest.php
 app/bundles/CampaignBundle/Tests/Controller/EventControllerFunctionalTest.php
@@ -4342,6 +4345,7 @@ app/bundles/CoreBundle/Tests/Functional/Service/LocalFileAdapterServiceTest.php
 app/bundles/CoreBundle/Tests/Functional/Command/AnonymizeIpCommandTest.php
 app/bundles/CoreBundle/Tests/Functional/Command/EntityExportCommandTest.php
 app/bundles/CoreBundle/Tests/Functional/Command/MaxMindDoNotSellPurgeCommandTest.php
+app/bundles/CoreBundle/Tests/Functional/Command/MessageOfTheDayCommandTest.php
 app/bundles/CoreBundle/Tests/Functional/ParametersTest.php
 app/bundles/CoreBundle/Tests/Functional/Field/Notification/CustomFieldNotificationFunctionalTest.php
 app/bundles/CoreBundle/Tests/Functional/Controller/AjaxControllerTest.php
@@ -4489,6 +4493,7 @@ app/bundles/CoreBundle/Tests/Unit/Helper/PathsHelperTest.php
 app/bundles/CoreBundle/Tests/Unit/Helper/EncryptionHelperTest.php
 app/bundles/CoreBundle/Tests/Unit/Helper/UuidHelperTest.php
 app/bundles/CoreBundle/Tests/Unit/Helper/PageHelperTest.php
+app/bundles/CoreBundle/Tests/Unit/Helper/TokenSorterTest.php
 app/bundles/CoreBundle/Tests/Unit/Helper/RandomHelper/RandomHelperTest.php
 app/bundles/CoreBundle/Tests/Unit/Helper/Language/InstallerTest.php
 app/bundles/CoreBundle/Tests/Unit/Helper/DateTime/DateTokenHelperTest.php
@@ -4886,6 +4891,7 @@ app/bundles/CoreBundle/Exception/FlattenableException.php
 app/bundles/CoreBundle/Exception/DeleteEntityDependencyException.php
 app/bundles/CoreBundle/Exception/BadConfigurationException.php
 app/bundles/CoreBundle/Exception/SchemaException.php
+app/bundles/CoreBundle/Exception/MessageOfTheDayException.php
 app/bundles/CoreBundle/Exception/RecordNotUnpublishedException.php
 app/bundles/CoreBundle/Exception/InvalidDecodedStringException.php
 app/bundles/CoreBundle/Exception/FileExistsException.php
@@ -4990,6 +4996,7 @@ app/bundles/CoreBundle/Helper/EncryptionHelper.php
 app/bundles/CoreBundle/Helper/FilePathResolver.php
 app/bundles/CoreBundle/Helper/PrivateAddressChecker.php
 app/bundles/CoreBundle/Helper/AppVersion.php
+app/bundles/CoreBundle/Helper/TokenSorter.php
 app/bundles/CoreBundle/Helper/DateTimeHelper.php
 app/bundles/CoreBundle/Helper/Dsn/Dsn.php
 app/bundles/CoreBundle/Helper/SearchStringHelper.php
@@ -5086,6 +5093,8 @@ app/bundles/CoreBundle/Doctrine/Mapping/AssociationBuilder.php
 app/bundles/CoreBundle/Doctrine/MigrationFactoryDecorator.php
 app/bundles/CoreBundle/Doctrine/Paginator/SimplePaginator.php
 app/bundles/CoreBundle/DTO/GlobalSearchFilterDTO.php
+app/bundles/CoreBundle/DTO/TokenFormatOptions.php
+app/bundles/CoreBundle/DTO/TokenLabelFormat.php
 app/bundles/CoreBundle/Release/Metadata.php
 app/bundles/CoreBundle/Release/ThisRelease.php
 app/bundles/CoreBundle/Update/StepProvider.php
@@ -5113,6 +5122,7 @@ app/bundles/CoreBundle/Service/OptimisticLockService.php
 app/bundles/CoreBundle/Service/BulkNotification.php
 app/bundles/CoreBundle/Service/OptimisticLockServiceInterface.php
 app/bundles/CoreBundle/Command/UnusedIpDeleteCommand.php
+app/bundles/CoreBundle/Command/MessageOfTheDayCommand.php
 app/bundles/CoreBundle/Command/CleanupMaintenanceCommand.php
 app/bundles/CoreBundle/Command/PullTransifexCommand.php
 app/bundles/CoreBundle/Command/AnonymizeIpCommand.php
@@ -5339,6 +5349,7 @@ app/bundles/PageBundle/Tests/Controller/PreviewFunctionalTest.php
 app/bundles/PageBundle/Tests/Controller/DeviceTrackingServiceClearCookiesTest.php
 app/bundles/PageBundle/Tests/Controller/PageControllerTest.php
 app/bundles/PageBundle/Tests/Controller/PageControllerFunctionalTest.php
+app/bundles/PageBundle/Tests/Controller/AjaxControllerFunctionalTest.php
 app/bundles/PageBundle/Tests/Controller/PublicControllerFunctionalTest.php
 app/bundles/PageBundle/Tests/Controller/NotFoundFunctionalTest.php
 app/bundles/PageBundle/Tests/Controller/PageControllerSqlRollbackFunctionalTest.php

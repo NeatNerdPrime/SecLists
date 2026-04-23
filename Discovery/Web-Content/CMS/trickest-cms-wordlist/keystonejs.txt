@@ -364,6 +364,7 @@ packages/core/fields/types/bytes/views/package.json
 packages/core/fields/types/calendarDay/views/package.json
 packages/core/fields/package.json
 packages/core/tests/telemetry.test.ts
+packages/core/tests/conditional-filters.test.ts
 packages/core/bin/cli.js
 packages/core/LICENSE
 packages/core/___internal-do-not-use-will-break-in-patch/artifacts/package.json
@@ -739,6 +740,7 @@ pnpm-lock.yaml
 .changeset/twelve-rings-remain.md
 .changeset/chilled-moons-walk.md
 .changeset/filter-relationships-too.md
+.changeset/fix-admin-file-duplicates.md
 .changeset/stupid-seas-burn.md
 .changeset/indexed-types.md
 .changeset/nervous-flies-press.md
@@ -762,6 +764,7 @@ pnpm-lock.yaml
 .changeset/tangy-items-carry.md
 .changeset/add-graphql-singular.md
 .changeset/structure-errors.md
+.changeset/and-or-not-conditional-filters.md
 .changeset/mean-fans-shop.md
 .changeset/new-jars-grab.md
 .changeset/list-sort-filter.md
@@ -1315,6 +1318,13 @@ examples/extend-graphql-schema-nexus/nexus-types.ts
 examples/extend-graphql-schema-nexus/schema.prisma
 examples/extend-graphql-schema-nexus/keystone-types.ts
 examples/extend-graphql-schema-nexus/keystone.ts
+examples/extend-full-text-search/schema.graphql
+examples/extend-full-text-search/schema.ts
+examples/extend-full-text-search/package.json
+examples/extend-full-text-search/sandbox.config.json
+examples/extend-full-text-search/README.md
+examples/extend-full-text-search/schema.prisma
+examples/extend-full-text-search/keystone.ts
 examples/auth-magic-link/schema.graphql
 examples/auth-magic-link/schema.ts
 examples/auth-magic-link/package.json
