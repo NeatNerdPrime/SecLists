@@ -763,8 +763,8 @@ apps/portal/src/components/global.styles.js
 apps/portal/src/components/notification.js
 apps/portal/src/components/trigger-button.styles.js
 apps/portal/src/data-attributes.js
+apps/portal/src/images/gift-card-orb.webp
 apps/portal/src/images/ghost-logo-small.svg
-apps/portal/src/images/gift-card-orb.svg
 apps/portal/src/images/icons/logout.svg
 apps/portal/src/images/icons/lock.svg
 apps/portal/src/images/icons/thumbs-up.svg
@@ -1824,7 +1824,6 @@ apps/posts/src/components/virtual-table/get-scroll-parent.tsx
 apps/posts/src/components/virtual-table/virtual-list-window.ts
 apps/posts/src/components/virtual-table/use-scroll-restoration.tsx
 apps/posts/src/components/layout/main-layout.tsx
-apps/posts/src/components/member-avatar.tsx
 apps/posts/src/components/label-picker/label-filter-renderer.tsx
 apps/posts/src/components/label-picker/label-picker.tsx
 apps/posts/src/components/label-picker/edit-row.tsx
@@ -1932,7 +1931,6 @@ apps/posts/src/views/comments/hooks/use-filter-state.ts
 apps/posts/src/views/comments/legacy-comment-filter-query.ts
 apps/posts/src/views/comments/comments.tsx
 apps/posts/src/views/comments/components/comment-header.tsx
-apps/posts/src/views/comments/components/comment-avatar.tsx
 apps/posts/src/views/comments/components/comment-thread-list.tsx
 apps/posts/src/views/comments/components/comment-content.tsx
 apps/posts/src/views/comments/components/comments-filters.tsx
@@ -3349,6 +3347,7 @@ ghost/core/core/server/web/gift-preview/controller.js
 ghost/core/core/server/web/gift-preview/index.js
 ghost/core/core/server/web/gift-preview/image.js
 ghost/core/core/server/web/gift-preview/app.js
+ghost/core/core/server/web/gift-preview/Inter.ttf
 ghost/core/core/server/web/api/endpoints/content/middleware.js
 ghost/core/core/server/web/api/endpoints/content/app.js
 ghost/core/core/server/web/api/endpoints/content/routes.js
@@ -5762,12 +5761,10 @@ ghost/admin/app/helpers/gh-count-characters.js
 ghost/admin/app/helpers/split-number.js
 ghost/admin/app/helpers/capitalize-first-letter.js
 ghost/admin/app/helpers/feature.js
-ghost/admin/app/helpers/is-onboarding-step-completed.js
 ghost/admin/app/helpers/ui-btn.js
 ghost/admin/app/helpers/site-icon-style.js
 ghost/admin/app/helpers/members-event-filter.js
 ghost/admin/app/helpers/ui-text.js
-ghost/admin/app/helpers/onboarding-step-class.js
 ghost/admin/app/helpers/is-moment-today.js
 ghost/admin/app/helpers/most-relevant-subscription.js
 ghost/admin/app/helpers/members-count-fetcher.js
@@ -5899,11 +5896,6 @@ ghost/admin/app/components/koenig-lexical-editor.hbs
 ghost/admin/app/components/liquid-container.js
 ghost/admin/app/components/gh-tags-token-input.hbs
 ghost/admin/app/components/gh-unsplash-photo.js
-ghost/admin/app/components/dashboard/onboarding-checklist.js
-ghost/admin/app/components/dashboard/onboarding/step.hbs
-ghost/admin/app/components/dashboard/onboarding/share-modal.js
-ghost/admin/app/components/dashboard/onboarding/share-modal.hbs
-ghost/admin/app/components/dashboard/onboarding-checklist.hbs
 ghost/admin/app/components/gh-facebook-url-input.js
 ghost/admin/app/components/gh-scroll-trigger.hbs
 ghost/admin/app/components/gh-site-iframe.hbs
