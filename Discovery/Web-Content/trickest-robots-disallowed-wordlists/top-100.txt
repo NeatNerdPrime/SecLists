@@ -1598,8 +1598,9 @@ de/events
 de/features
 de/integrations
 de/ott
+de/product
 de/solutions
-de/upload
+de/video-uploader
 de/vimeo-academy
 deactivate-account
 default.aspx/kb/
@@ -1792,10 +1793,11 @@ es/microsoft-viva
 es/microsoft-viva/
 es/node/*
 es/ott
+es/product
 es/security
 es/security/
 es/solutions
-es/upload
+es/video-uploader
 es/vimeo-academy
 esi_cache
 eures/main.jsp
@@ -1913,10 +1915,11 @@ fr/microsoft-teams/
 fr/microsoft-viva
 fr/microsoft-viva/
 fr/ott
+fr/product
 fr/security
 fr/security/
 fr/solutions
-fr/upload
+fr/video-uploader
 fr/vimeo-academy
 france/formation/centres/planning.asp?
 france/ie/default.asp?
@@ -2117,10 +2120,10 @@ hp/video
 hpc/*/supported-applications.aspx?
 hpm
 hpmob
-http://archive.org/robots.txt
-http://cdc.gov/robots.txt
-http://t.me/robots.txt
-http://web.archive.org/robots.txt
+http://amazon.co.uk/robots.txt
+http://api.whatsapp.com/robots.txt
+http://apps.apple.com/robots.txt
+http://slideshare.net/robots.txt
 hub?category=
 hz/contact-us/ajax/initiate-trusted-contact
 hz/help/contact/*/message/$
@@ -2225,8 +2228,9 @@ jp/events
 jp/features
 jp/integrations
 jp/ott
+jp/product
 jp/solutions
-jp/upload
+jp/video-uploader
 jp/vimeo-academy
 js
 jsapi
@@ -2248,8 +2252,9 @@ ko/events
 ko/features
 ko/integrations
 ko/ott
+ko/product
 ko/solutions
-ko/upload
+ko/video-uploader
 ko/vimeo-academy
 kwanzaa-spotlight
 l.php
@@ -2631,6 +2636,7 @@ print
 privacy-policy
 pro
 proFile/history?
+product
 product-catalogs
 product-feed
 product-reviews/B0069IY63Y
@@ -2661,6 +2667,7 @@ proteinclusters/?term=
 protfam/?term=
 proxy
 psb/udc
+pt-BR/video-uploader
 pt-br/$
 pt-br/about
 pt-br/blog
@@ -2672,8 +2679,8 @@ pt-br/events
 pt-br/features
 pt-br/integrations
 pt-br/ott
+pt-br/product
 pt-br/solutions
-pt-br/upload
 pt-br/vimeo-academy
 publications
 puzzles/leaderboards/invite
@@ -2718,6 +2725,7 @@ report_abuse.gne
 reports-and-violations
 request-data
 requests
+research-survey
 research/participants/cofund
 resource
 resource/*/get
@@ -2794,6 +2802,7 @@ search?*cashtagRestId=
 search?*tbm=map
 search?q$
 search?q=
+search?q=%23
 search\?
 search_history
 sections
@@ -3421,6 +3430,7 @@ unauth-profile
 unlink
 unsub
 until=
+upgrade-plan
 upload
 upload-lens-image
 upload-lens-image-history
@@ -3451,6 +3461,7 @@ v3/pidgets/log
 valkyrie-playground
 verified-authors
 verify_age
+video-uploader
 video/embedded
 video/search
 videos
@@ -3710,7 +3721,7 @@ wiki/Wikipedia%3AVandalismi_in_corso
 wiki/Wikipedia%3AVandalismusmeldung
 wiki/Wikipedia%3AVandalismusmeldung%2F
 wiki/Wikipedia%3AVermittlungsausschuss
-wiki/Wikipedia%3AVermittlungsausschuss%2Fhttp://plus.google.com/robots.txt
+wiki/Wikipedia%3AVermittlungsausschuss%2Fhttp://developers.google.com/robots.txt
 wiki/Wikipedia%3AVotes_for_deletion
 wiki/Wikipedia%3AWikiProject_Deletion_sorting
 wiki/Wikipedia%3AWikiProject_Spam
@@ -3879,7 +3890,7 @@ wiki/Wikipedia_Diskussion:Checkuser%2F
 wiki/Wikipedia_Diskussion:Spam-Blacklist-Log
 wiki/Wikipedia_talk%3AAbuse_reports
 wiki/Wikipedia_talk%3AAbuse_response
-wiki/Wikipedia_talk%3AAdministrator_electionshttp://medium.com/robots.txt
+wiki/Wikipedia_talk%3AAdministrator_electionshttp://facebook.com/robots.txt
 wiki/Wikipedia_talk%3AAdministrator_recall
 wiki/Wikipedia_talk%3AAdministrator_review
 wiki/Wikipedia_talk%3AAdministrators%27_noticeboard
