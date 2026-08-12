@@ -10240,6 +10240,11 @@ selling/report/sales_partner_transaction_summary/sales_partner_transaction_summa
 report/sales_partner_transaction_summary/sales_partner_transaction_summary.py
 sales_partner_transaction_summary/sales_partner_transaction_summary.py
 sales_partner_transaction_summary.py
+erpnext/selling/report/sales_partner_transaction_summary/test_utils.py
+selling/report/sales_partner_transaction_summary/test_utils.py
+report/sales_partner_transaction_summary/test_utils.py
+sales_partner_transaction_summary/test_utils.py
+test_utils.py
 erpnext/selling/report/sales_partner_transaction_summary/sales_partner_transaction_summary.js
 selling/report/sales_partner_transaction_summary/sales_partner_transaction_summary.js
 report/sales_partner_transaction_summary/sales_partner_transaction_summary.js
@@ -12168,6 +12173,10 @@ erpnext/patches/v16_0/set_posting_datetime_for_sabb_and_drop_indexes.py
 patches/v16_0/set_posting_datetime_for_sabb_and_drop_indexes.py
 v16_0/set_posting_datetime_for_sabb_and_drop_indexes.py
 set_posting_datetime_for_sabb_and_drop_indexes.py
+erpnext/patches/v16_0/rename_italy_customer_name_fields.py
+patches/v16_0/rename_italy_customer_name_fields.py
+v16_0/rename_italy_customer_name_fields.py
+rename_italy_customer_name_fields.py
 erpnext/patches/v16_0/convert_hide_currency_symbol_to_check.py
 patches/v16_0/convert_hide_currency_symbol_to_check.py
 v16_0/convert_hide_currency_symbol_to_check.py
@@ -12188,6 +12197,10 @@ erpnext/patches/v16_0/set_mr_picked_qty.py
 patches/v16_0/set_mr_picked_qty.py
 v16_0/set_mr_picked_qty.py
 set_mr_picked_qty.py
+erpnext/patches/v16_0/set_work_order_requested_and_picked_qty.py
+patches/v16_0/set_work_order_requested_and_picked_qty.py
+v16_0/set_work_order_requested_and_picked_qty.py
+set_work_order_requested_and_picked_qty.py
 erpnext/patches/v16_0/scr_inv_dimension.py
 patches/v16_0/scr_inv_dimension.py
 v16_0/scr_inv_dimension.py

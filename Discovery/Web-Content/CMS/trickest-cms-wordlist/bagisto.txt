@@ -798,6 +798,7 @@ packages/Webkul/PhonePe/src/Resources/lang/id/app.php
 packages/Webkul/PhonePe/src/Resources/lang/he/app.php
 packages/Webkul/PhonePe/src/Resources/lang/pl/app.php
 packages/Webkul/PhonePe/src/Resources/lang/ca/app.php
+packages/Webkul/PhonePe/src/Resources/lang/ro/app.php
 packages/Webkul/PhonePe/src/Resources/lang/es/app.php
 packages/Webkul/PhonePe/src/Resources/lang/en/app.php
 packages/Webkul/PhonePe/src/Resources/lang/bn/app.php
@@ -1403,6 +1404,8 @@ packages/Webkul/Core/src/Helpers/Exchange/ExchangeRate.php
 packages/Webkul/Core/src/Helpers/Exchange/ExchangeRates.php
 packages/Webkul/Core/src/Helpers/Exchange/FixerExchange.php
 packages/Webkul/Core/src/Helpers/InstalledPackages.php
+packages/Webkul/Core/src/Helpers/SupportedCurrencies.php
+packages/Webkul/Core/src/Helpers/SupportedLocales.php
 packages/Webkul/Core/src/Resources/manifest.php
 packages/Webkul/Core/src/Resources/views/blade/tracer/style.blade.php
 packages/Webkul/Core/src/Resources/lang/fr/validation.php
@@ -3454,6 +3457,7 @@ packages/Webkul/EUWithdrawal/src/Models/Withdrawal.php
 packages/Webkul/EUWithdrawal/src/Database/Migrations/2026_05_27_114230_create_eu_withdrawals_table.php
 packages/Webkul/EUWithdrawal/src/Enums/WithdrawalStatus.php
 packages/Webkul/EUWithdrawal/src/Events/WithdrawalReceived.php
+packages/Webkul/EUWithdrawal/src/Resources/manifest.php
 packages/Webkul/EUWithdrawal/src/Contracts/Withdrawal.php
 packages/Webkul/EUWithdrawal/src/Providers/EUWithdrawalServiceProvider.php
 packages/Webkul/EUWithdrawal/src/Providers/ModuleServiceProvider.php
