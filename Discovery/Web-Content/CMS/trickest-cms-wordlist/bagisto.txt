@@ -1827,6 +1827,7 @@ packages/Webkul/Product/src/Database/Factories/ProductReviewFactory.php
 packages/Webkul/Product/src/Database/Migrations/2019_06_17_180314_create_product_downloadable_sample_translations_table.php
 packages/Webkul/Product/src/Database/Migrations/2020_05_21_171500_create_product_customer_group_prices_table.php
 packages/Webkul/Product/src/Database/Migrations/2018_07_27_065727_create_products_table.php
+packages/Webkul/Product/src/Database/Migrations/2026_08_13_000001_make_images_count_nullable_in_product_flat_table.php
 packages/Webkul/Product/src/Database/Migrations/2024_01_19_170350_add_unique_id_column_in_product_customer_group_prices_table.php
 packages/Webkul/Product/src/Database/Migrations/2024_10_11_135110_create_product_customizable_option_translations_table.php
 packages/Webkul/Product/src/Database/Migrations/2020_11_19_112228_create_product_videos_table.php
@@ -2137,6 +2138,7 @@ packages/Webkul/Admin/tests/Feature/Settings/UsersTest.php
 packages/Webkul/Admin/tests/Feature/Settings/ExchangeRatesTest.php
 packages/Webkul/Admin/tests/Feature/Settings/RoleTest.php
 packages/Webkul/Admin/tests/Feature/Catalog/AttributeTest.php
+packages/Webkul/Admin/tests/Feature/Catalog/Products/ProductBaseImageTest.php
 packages/Webkul/Admin/tests/Feature/Catalog/Products/ProductTest.php
 packages/Webkul/Admin/tests/Feature/Catalog/Products/Types/GroupedTest.php
 packages/Webkul/Admin/tests/Feature/Catalog/Products/Types/BundleTest.php
@@ -2144,6 +2146,7 @@ packages/Webkul/Admin/tests/Feature/Catalog/Products/Types/SimpleTest.php
 packages/Webkul/Admin/tests/Feature/Catalog/Products/Types/ConfigurableTest.php
 packages/Webkul/Admin/tests/Feature/Catalog/Products/Types/DownloadableTest.php
 packages/Webkul/Admin/tests/Feature/Catalog/Products/Types/VirtualTest.php
+packages/Webkul/Admin/tests/Feature/Catalog/Products/ProductFlatDerivedColumnsTest.php
 packages/Webkul/Admin/tests/Feature/Catalog/CategoryTest.php
 packages/Webkul/Admin/tests/Feature/Catalog/AttributeFamilyTest.php
 packages/Webkul/Admin/tests/Feature/Dashboard/DashboardTest.php
@@ -2153,11 +2156,13 @@ packages/Webkul/Admin/tests/Feature/Customers/CustomerGroupsTest.php
 packages/Webkul/Admin/tests/Feature/Customers/CustomersTest.php
 packages/Webkul/Admin/tests/Feature/Customers/ReviewTest.php
 packages/Webkul/Admin/tests/Feature/Sales/OrdersTest.php
+packages/Webkul/Admin/tests/Feature/Sales/RMA/MassDeleteTest.php
 packages/Webkul/Admin/tests/Feature/Sales/InvoiceTest.php
 packages/Webkul/Admin/tests/Feature/Sales/RefundTest.php
 packages/Webkul/Admin/tests/Feature/Sales/TransactionTest.php
 packages/Webkul/Admin/tests/Feature/Sales/Orders/OrdersTest.php
 packages/Webkul/Admin/tests/Feature/Sales/ShipmentTest.php
+packages/Webkul/Admin/tests/Feature/Sales/EUWithdrawalDataGridTest.php
 packages/Webkul/Admin/tests/Feature/Marketing/Promotions/CatalogRuleTest.php
 packages/Webkul/Admin/tests/Feature/Marketing/Promotions/CartRuleTest.php
 packages/Webkul/Admin/tests/Feature/Marketing/SearchAndSeo/UrlRewritesTest.php

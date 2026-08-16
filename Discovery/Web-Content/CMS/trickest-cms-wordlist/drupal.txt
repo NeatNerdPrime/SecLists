@@ -7688,6 +7688,7 @@ core/modules/pgsql/tests/src/Unit/EntityQuery/ConditionTest.php
 core/modules/pgsql/tests/src/Kernel/pgsql/SchemaUniquePrefixedKeysIndexTest.php
 core/modules/pgsql/tests/src/Kernel/pgsql/ConnectionUnitTest.php
 core/modules/pgsql/tests/src/Kernel/pgsql/DatabaseExceptionWrapperTest.php
+core/modules/pgsql/tests/src/Kernel/pgsql/TruncateTest.php
 core/modules/pgsql/tests/src/Kernel/pgsql/SchemaTest.php
 core/modules/pgsql/tests/src/Kernel/pgsql/KernelTestBaseTest.php
 core/modules/pgsql/tests/src/Kernel/pgsql/TransactionTest.php
