@@ -317,6 +317,7 @@ tests/Umbraco.Tests.UnitTests/Umbraco.Cms.Api.Management/Services/ItemAncestorSe
 tests/Umbraco.Tests.UnitTests/Umbraco.Cms.Api.Management/Services/UserStartNodeEntitiesServiceTests.cs
 tests/Umbraco.Tests.UnitTests/Umbraco.Cms.Api.Management/Services/BackOfficeExternalLoginServiceTests.UnLinkLoginAsync.cs
 tests/Umbraco.Tests.UnitTests/Umbraco.Cms.Api.Management/Services/UserStartNodePathComparisonTests.cs
+tests/Umbraco.Tests.UnitTests/Umbraco.Cms.Api.Management/Services/MemberIndexAuthorizerTests.cs
 tests/Umbraco.Tests.UnitTests/Umbraco.Cms.Api.Management/Mapping/Permissions/ElementPermissionMapperTests.cs
 tests/Umbraco.Tests.UnitTests/Umbraco.Cms.Api.Management/Mapping/Content/PublishableVariantStateHelperTests.cs
 tests/Umbraco.Tests.UnitTests/Umbraco.Cms.Api.Management/Patching/PatchPathResolverTests.cs
@@ -340,6 +341,7 @@ tests/Umbraco.Tests.UnitTests/Umbraco.Cms.Api.Management/Security/UriProviderTes
 tests/Umbraco.Tests.UnitTests/Umbraco.Cms.Api.Management/Security/BackOfficeApplicationManagerTests.cs
 tests/Umbraco.Tests.UnitTests/Umbraco.Cms.Api.Management/Security/BackOfficeAuthenticationBuilderTests.cs
 tests/Umbraco.Tests.UnitTests/Umbraco.Cms.Api.Management/Security/Authorization/AllChildrenAuthorizerTests.cs
+tests/Umbraco.Tests.UnitTests/Umbraco.Cms.Api.Management/Security/BackOfficeSignInManagerTests.cs
 tests/Umbraco.Tests.UnitTests/Umbraco.Cms.Api.Management/ServerEvents/ServerEventAuthorizerTests.cs
 tests/Umbraco.Tests.UnitTests/Umbraco.Cms.Api.Management/ServerEvents/ServerEventUserManagerTests.cs
 tests/Umbraco.Tests.UnitTests/Umbraco.Cms.Api.Management/ServerEvents/ServerEventSenderTests.cs
@@ -380,6 +382,7 @@ tests/Umbraco.Tests.UnitTests/Umbraco.Web.Website/Controllers/UmbProfileControll
 tests/Umbraco.Tests.UnitTests/Umbraco.Web.Website/Middleware/BasicAuthenticationMiddlewareTests.cs
 tests/Umbraco.Tests.UnitTests/Umbraco.PublishedCache.HybridCache/DomainCacheServiceTests.cs
 tests/Umbraco.Tests.UnitTests/Umbraco.PublishedCache.HybridCache/ElementCacheSyncFastPathTests.cs
+tests/Umbraco.Tests.UnitTests/Umbraco.PublishedCache.HybridCache/DomainCacheTests.cs
 tests/Umbraco.Tests.UnitTests/Umbraco.PublishedCache.HybridCache/DocumentCacheSyncFastPathTests.cs
 tests/Umbraco.Tests.UnitTests/Umbraco.PublishedCache.HybridCache/MediaBreadthFirstKeyProviderTests.cs
 tests/Umbraco.Tests.UnitTests/Umbraco.PublishedCache.HybridCache/DeferredCacheRebuildServiceTests.cs
@@ -630,6 +633,7 @@ tests/Umbraco.Tests.UnitTests/Umbraco.Core/CoreThings/UriUtilityCoreTests.cs
 tests/Umbraco.Tests.UnitTests/Umbraco.Core/CoreThings/TryConvertToTests.cs
 tests/Umbraco.Tests.UnitTests/Umbraco.Core/CoreThings/UdiTests.cs
 tests/Umbraco.Tests.UnitTests/Umbraco.Core/Deploy/ArtifactBaseTests.cs
+tests/Umbraco.Tests.UnitTests/Umbraco.Core/PublishedCache/DefaultCultureAccessorTests.cs
 tests/Umbraco.Tests.UnitTests/Umbraco.Core/Collections/CompositeStringArrayKeyTests.cs
 tests/Umbraco.Tests.UnitTests/Umbraco.Core/Collections/TopoGraphTests.cs
 tests/Umbraco.Tests.UnitTests/Umbraco.Core/Collections/CompositeStringStringKeyTests.cs
@@ -998,6 +1002,7 @@ tests/Umbraco.Tests.AcceptanceTest/tests/DefaultConfig/Content/Clipboard/Clipboa
 tests/Umbraco.Tests.AcceptanceTest/tests/DefaultConfig/Content/ContentWithMemberGroupPicker.spec.ts
 tests/Umbraco.Tests.AcceptanceTest/tests/DefaultConfig/Content/BlockList/ContentWithBlockList.spec.ts
 tests/Umbraco.Tests.AcceptanceTest/tests/DefaultConfig/Content/BlockList/VariantBlockList.spec.ts
+tests/Umbraco.Tests.AcceptanceTest/tests/DefaultConfig/Content/BlockList/NestedInlineBlockList.spec.ts
 tests/Umbraco.Tests.AcceptanceTest/tests/DefaultConfig/Content/BlockList/BlockListWithPropertyEditor.spec.ts
 tests/Umbraco.Tests.AcceptanceTest/tests/DefaultConfig/Content/BlockList/NestedVariantBlockInvariantWrapper.spec.ts
 tests/Umbraco.Tests.AcceptanceTest/tests/DefaultConfig/Content/BlockList/SecondLevelBlockProperties.spec.ts
@@ -2062,6 +2067,7 @@ tests/Umbraco.Tests.Integration/ManagementApi/MediaType/Tree/RootMediaTreeTypeTr
 tests/Umbraco.Tests.Integration/ManagementApi/MediaType/Tree/ChildrenMediaTypeTreeControllerTests.cs
 tests/Umbraco.Tests.Integration/ManagementApi/MediaType/DeleteMediaTypeControllerTests.cs
 tests/Umbraco.Tests.Integration/ManagementApi/MediaType/BatchMediaTypesControllerTests.cs
+tests/Umbraco.Tests.Integration/ManagementApi/MediaType/AvailableCompositionMediaTypeControllerTests.cs
 tests/Umbraco.Tests.Integration/ManagementApi/MediaType/AllowedParentsMediaTypeControllerTests.cs
 tests/Umbraco.Tests.Integration/ManagementApi/MediaType/CreateMediaTypeControllerTests.cs
 tests/Umbraco.Tests.Integration/ManagementApi/Tag/ByQueryTagControllerTests.cs
@@ -2072,8 +2078,11 @@ tests/Umbraco.Tests.Integration/ManagementApi/UserGroup/BulkDeleteUserGroupContr
 tests/Umbraco.Tests.Integration/ManagementApi/UserGroup/CreateUserGroupControllerTests.cs
 tests/Umbraco.Tests.Integration/ManagementApi/UserGroup/DeleteUserGroupControllerTests.cs
 tests/Umbraco.Tests.Integration/ManagementApi/UserGroup/UpdateUserGroupControllerTests.cs
+tests/Umbraco.Tests.Integration/ManagementApi/Indexer/DetailsIndexerControllerMemberIndexTests.cs
+tests/Umbraco.Tests.Integration/ManagementApi/Indexer/AllIndexerControllerMemberIndexTests.cs
 tests/Umbraco.Tests.Integration/ManagementApi/Indexer/AllIndexerControllerTests.cs
 tests/Umbraco.Tests.Integration/ManagementApi/Indexer/RebuildIndexerControllerTests.cs
+tests/Umbraco.Tests.Integration/ManagementApi/Indexer/RebuildIndexerControllerMemberIndexTests.cs
 tests/Umbraco.Tests.Integration/ManagementApi/Indexer/DetailsIndexerControllerTests.cs
 tests/Umbraco.Tests.Integration/ManagementApi/Script/DeleteScriptControllerTests.cs
 tests/Umbraco.Tests.Integration/ManagementApi/Script/Item/ItemScriptItemControllerTests.cs
@@ -2197,6 +2206,7 @@ tests/Umbraco.Tests.Integration/ManagementApi/DocumentType/Tree/SearchDocumentTy
 tests/Umbraco.Tests.Integration/ManagementApi/DocumentType/Tree/ChildrenDocumentTypeTreeControllerTests.cs
 tests/Umbraco.Tests.Integration/ManagementApi/DocumentType/DeleteDocumentTypeControllerTests.cs
 tests/Umbraco.Tests.Integration/ManagementApi/DocumentType/ByKeyDocumentTypeControllerTests.cs
+tests/Umbraco.Tests.Integration/ManagementApi/DocumentType/CreateDocumentTypeTemplateControllerTests.cs
 tests/Umbraco.Tests.Integration/ManagementApi/DocumentType/UpdateDocumentTypeControllerTests.cs
 tests/Umbraco.Tests.Integration/ManagementApi/DocumentType/BatchDocumentTypesControllerTests.cs
 tests/Umbraco.Tests.Integration/ManagementApi/DocumentType/AllowedInLibraryDocumentTypeControllerTests.cs
@@ -2231,6 +2241,7 @@ tests/Umbraco.Tests.Integration/ManagementApi/TemporaryFile/CreateTemporaryFileC
 tests/Umbraco.Tests.Integration/ManagementApi/TemporaryFile/DeleteTemporaryFileControllerTests.cs
 tests/Umbraco.Tests.Integration/ManagementApi/TemporaryFile/ByKeyTemporaryFileControllerTests.cs
 tests/Umbraco.Tests.Integration/ManagementApi/PublishedCache/ReloadPublishedCacheControllerTests.cs
+tests/Umbraco.Tests.Integration/ManagementApi/PublishedCache/RebuildPublishedCacheStatusControllerTests.cs
 tests/Umbraco.Tests.Integration/ManagementApi/PublishedCache/RebuildPublishedCacheControllerTests.cs
 tests/Umbraco.Tests.Integration/ManagementApi/RelationType/Item/ItemRelationTypeItemControllerTests.cs
 tests/Umbraco.Tests.Integration/ManagementApi/RelationType/ByKeyRelationTypeControllerTests.cs
@@ -2240,6 +2251,7 @@ tests/Umbraco.Tests.Integration/ManagementApi/RedirectUrlManagement/DeleteByKeyR
 tests/Umbraco.Tests.Integration/ManagementApi/RedirectUrlManagement/ByKeyRedirectUrlManagementControllerTests.cs
 tests/Umbraco.Tests.Integration/ManagementApi/RedirectUrlManagement/GetStatusRedirectUrlManagementControllerTests.cs
 tests/Umbraco.Tests.Integration/ManagementApi/Searcher/QuerySearcherControllerTests.cs
+tests/Umbraco.Tests.Integration/ManagementApi/Searcher/QuerySearcherControllerMemberIndexTests.cs
 tests/Umbraco.Tests.Integration/ManagementApi/Searcher/AllSearcherControllerTests.cs
 tests/Umbraco.Tests.Integration/ManagementApi/LogViewer/LogLevelCountLogViewerControllerTests.cs
 tests/Umbraco.Tests.Integration/ManagementApi/LogViewer/SavedSearch/CreateSavedSearchLogViewerControllerTests.cs
@@ -3997,9 +4009,11 @@ src/Umbraco.Cms.Api.Management/Services/NewsDashboard/NewsCacheDurationProvider.
 src/Umbraco.Cms.Api.Management/Services/NewsDashboard/INewsDashboardService.cs
 src/Umbraco.Cms.Api.Management/Services/NewsDashboard/INewsCacheDurationProvider.cs
 src/Umbraco.Cms.Api.Management/Services/BackOfficeExternalLoginService.cs
+src/Umbraco.Cms.Api.Management/Services/MemberIndexAuthorizer.cs
 src/Umbraco.Cms.Api.Management/Services/IExamineManagerService.cs
 src/Umbraco.Cms.Api.Management/Services/ContentTypeJsonSchemaService.cs
 src/Umbraco.Cms.Api.Management/Services/IMemberReferenceService.cs
+src/Umbraco.Cms.Api.Management/Services/IMemberIndexAuthorizer.cs
 src/Umbraco.Cms.Api.Management/Routing/IAbsoluteUrlBuilder.cs
 src/Umbraco.Cms.Api.Management/Routing/VersionedApiBackOfficeRouteAttribute.cs
 src/Umbraco.Cms.Api.Management/Routing/PreviewRoutes.cs
@@ -8669,6 +8683,13 @@ src/Umbraco.Web.UI.Client/mocks/data/sets/user-permissions/index.ts
 src/Umbraco.Web.UI.Client/mocks/data/sets/user-permissions/user-group.data.ts
 src/Umbraco.Web.UI.Client/mocks/data/sets/user-permissions/document.data.ts
 src/Umbraco.Web.UI.Client/mocks/data/sets/user-permissions/language.data.ts
+src/Umbraco.Web.UI.Client/mocks/data/sets/blocks/data-type.data.ts
+src/Umbraco.Web.UI.Client/mocks/data/sets/blocks/user.data.ts
+src/Umbraco.Web.UI.Client/mocks/data/sets/blocks/document-type.data.ts
+src/Umbraco.Web.UI.Client/mocks/data/sets/blocks/index.ts
+src/Umbraco.Web.UI.Client/mocks/data/sets/blocks/user-group.data.ts
+src/Umbraco.Web.UI.Client/mocks/data/sets/blocks/document.data.ts
+src/Umbraco.Web.UI.Client/mocks/data/sets/blocks/language.data.ts
 src/Umbraco.Web.UI.Client/mocks/data/sets/kitchen-sink/relationType.data.ts
 src/Umbraco.Web.UI.Client/mocks/data/sets/kitchen-sink/static-file.data.ts
 src/Umbraco.Web.UI.Client/mocks/data/sets/kitchen-sink/data-type.data.ts
@@ -10242,6 +10263,7 @@ src/Umbraco.Web.UI.Client/src/packages/log-viewer/components/donut-chart/index.t
 src/Umbraco.Web.UI.Client/src/packages/log-viewer/components/donut-chart/donut-chart.element.ts
 src/Umbraco.Web.UI.Client/src/packages/log-viewer/components/donut-chart/donut-chart.stories.ts
 src/Umbraco.Web.UI.Client/src/packages/log-viewer/components/log-viewer-date-range-selector.element.ts
+src/Umbraco.Web.UI.Client/src/packages/log-viewer/utils.test.ts
 src/Umbraco.Web.UI.Client/src/packages/log-viewer/package.json
 src/Umbraco.Web.UI.Client/src/packages/log-viewer/vite.config.ts
 src/Umbraco.Web.UI.Client/src/packages/log-viewer/index.ts
@@ -10250,6 +10272,7 @@ src/Umbraco.Web.UI.Client/src/packages/log-viewer/repository/sources/log-viewer.
 src/Umbraco.Web.UI.Client/src/packages/log-viewer/repository/sources/index.ts
 src/Umbraco.Web.UI.Client/src/packages/log-viewer/repository/log-viewer.repository.ts
 src/Umbraco.Web.UI.Client/src/packages/log-viewer/menu-item/manifests.ts
+src/Umbraco.Web.UI.Client/src/packages/log-viewer/utils.ts
 src/Umbraco.Web.UI.Client/src/packages/log-viewer/umbraco-package.ts
 src/Umbraco.Web.UI.Client/src/packages/log-viewer/workspace/logviewer-workspace.element.ts
 src/Umbraco.Web.UI.Client/src/packages/log-viewer/workspace/manifests.ts
